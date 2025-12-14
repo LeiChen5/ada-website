@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scroll-triggered Animated Bar Chart</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+      background-color: #f9fafb;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0;
+      color: #111827;
+    }
+
+    #chart-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+
+    .bar {
+      fill: #4f46e5;
+    }
+
+    .label {
+      fill: #374151;
+      font-size: 14px;
+      text-anchor: middle;
+    }
+
+    .axis text {
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="spacer"></div>
+
+  <h2>Market Reaction by Sector</h2>
+
+  <div id="chart-container">
+    <svg viewBox="0 0 700 400" preserveAspectRatio="xMidYMid meet"></svg>
+  </div>
+
+  <div class="spacer"></div>
+
+<script>
+  const data = [
+    { sector: "Technology", value: 35 },
+    { sector: "Energy", value: 20 },
+    { sector: "Finance", value: 25 },
+    { sector: "Healthcare", value: 30 },
+    { sector: "Luxury", value: 15 }
+  ];
+
+  const svg = d3.select("svg");
+  const margin = { top: 40, right: 30, bottom: 60, left: 50 };
+  const width = 700 - margin.left - margin.right;
+  const height = 400 - margin.top - margin.bottom;
+
+  const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+  const x = d3.scaleBand()
+    .domain(data.map(d => d.sector))
+    .range([0, width])
+    .padding(0.3);
+
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.value)])
+    .nice()
+    .range([height, 0]);
+
+  // Axes
+  g.append("g")
+    .attr("class", "axis")
+    .attr("transform", `translate(0,${height})`)
+    .call(d3.axisBottom(x));
+
+  g.append("g")
+    .attr("class", "axis")
+    .call(d3.axisLeft(y));
+
+  // === 动画函数（只在滚到时调用） ===
+  function drawBars() {
+    g.selectAll(".bar")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("class", "bar")
+      .attr("x", d => x(d.sector))
+      .attr("width", x.bandwidth())
+      .attr("y", height)
+      .attr("height", 0)
+      .transition()
+      .duration(1000)
+      .delay((d, i) => i * 150)
+      .attr("y", d => y(d.value))
+      .attr("height", d => height - y(d.value));
+
+    g.selectAll(".label")
+      .data(data)
+      .enter()
+      .append("text")
+      .attr("class", "label")
+      .attr("x", d => x(d.sector) + x.bandwidth() / 2)
+      .attr("y", height)
+      .text(d => d.value)
+      .transition()
+      .duration(1000)
+      .delay((d, i) => i * 150)
+      .attr("y", d => y(d.value) - 5);
+  }
+
+  // === 滚动触发动画 ===
+  let hasAnimated = false;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasAnimated) {
+        drawBars();
+        hasAnimated = true;
+      }
+    });
+  }, {
+    threshold: 0.4
+  });
+
+  observer.observe(document.querySelector("#chart-container"));
+</script>
+
+</body>
+</html>

@@ -268,3 +268,220 @@ footer {
     color:#444;
   }
 }
+
+/* 主标题动画 */
+.animate-title {
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0;
+  animation: fadeInTitle 1.5s ease-out forwards;
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title-main {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.title-sub {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #555;
+}
+.hero-title {
+  background-color: #f3f4f6;
+  padding: 120px 20px 100px;
+}
+
+.hero-intro {
+  max-width: 900px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.intro-label {
+  text-transform: uppercase;
+  font-size: 1.85rem;
+  letter-spacing: 0.15em;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.intro-text {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #374151;
+  text-align: justify;
+  text-justify: inter-word;
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+.animate-intro {
+  opacity: 0;
+  animation: fadeInIntro 1.2s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInIntro {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.research-section {
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding-top: 40px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.section-label {
+  text-transform: uppercase;
+  font-size: 1.85rem;
+  letter-spacing: 0.15em;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.research-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.research-list li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #374151;
+
+  text-align: justify;
+  text-justify: inter-word;
+
+  margin-bottom: 28px;
+  padding-left: 24px;
+  position: relative;
+}
+.research-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #9ca3af;
+}
+.animate-section {
+  opacity: 0;
+  animation: fadeInSection 1.2s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.methodology-section {
+  max-width: 900px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.methodology-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1f2937;
+}
+
+.methodology-intro {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #374151;
+  text-align: justify;
+  text-justify: inter-word;
+
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.chapter-section {
+  text-align: justify;
+  text-justify: inter-word;
+  
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding-top: 40px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chapter-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.chapter-section p {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: #374151;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.playbook {
+  background-color: #f9fafb;
+  padding: 40px;
+  border-radius: 12px;
+}
+.viz-block {
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.viz-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.viz-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.viz-placeholder {
+  height: 360px;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-style: italic;
+  background-color: #f9fafb;
+}
