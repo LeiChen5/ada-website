@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>The Market as a Mirror</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css">
+  <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+
 </head>
 <body>
 <header class="site-header-nav">
@@ -48,6 +51,83 @@
       Ultimately, our goal is to show that markets don’t just move — <strong>they feel</strong>.
     </p>
   </div>
+  <div class="timeline-container">
+    <div id="timeline"></div>
+  </div>
+  <script>
+    const items = new vis.DataSet([
+      {
+        id: 1,
+        content: '9/11 attacks',
+        start: '2001-09-11',
+        title: '<strong>September 11 attacks</strong><br>Theme: Geopolitics'
+      },
+      {
+        id: 2,
+        content: 'Hurricane Katrina',
+        start: '2005-08-29',
+        title: '<strong>Hurricane Katrina</strong><br>Theme: Natural disaster / Regional economy / Energy'
+      },
+      {
+        id: 3,
+        content: 'iPhone launch',
+        start: '2007-01-09',
+        title: '<strong>iPhone announcement (Steve Jobs keynote)</strong><br>Theme: Innovation / Technology'
+      },
+      {
+        id: 4,
+        content: '2008 financial crisis',
+        start: '2008-09-15',
+        title: '<strong>2008 financial crisis (Lehman Brothers bankruptcy)</strong><br>Theme: Economy / Finance'
+      },
+      {
+        id: 5,
+        content: 'Trump elected (2016)',
+        start: '2016-11-08',
+        title: '<strong>U.S. presidential election (Trump elected)</strong><br>Theme: Politics'
+      },
+      {
+        id: 6,
+        content: 'COVID emergency',
+        start: '2020-03-13',
+        title: '<strong>COVID-19 pandemic (U.S. national emergency declaration)</strong><br>Theme: Public health / Economy'
+      },
+      {
+        id: 7,
+        content: 'IRA signed',
+        start: '2022-08-16',
+        title: '<strong>Inflation Reduction Act (IRA) signed into law</strong><br>Theme: Politics / Economy / Environment'
+      },
+      {
+        id: 8,
+        content: 'Musk buys Twitter',
+        start: '2022-10-27',
+        title: '<strong>Elon Musk completes acquisition of X (Twitter)</strong><br>Theme: Technology / Media'
+      },
+      {
+        id: 9,
+        content: 'ChatGPT launch',
+        start: '2022-11-30',
+        title: '<strong>Launch of ChatGPT (AI revolution)</strong><br>Theme: Innovation / Technology'
+      },
+      {
+        id: 10,
+        content: 'Trump election (2024)',
+        start: '2024-11-05',
+        title: '<strong>U.S. presidential election (Trump)</strong><br>Theme: Politics'
+      }
+    ]);
+
+
+
+    const options = {
+      autoResize: true,
+      showCurrentTime: false,
+
+    };
+    const container = document.getElementById('timeline');
+    const timeline = new vis.Timeline(container, items, options);
+  </script>
   
   <div class="research-section animate-section" id="research">
     <p class="section-label">Research Questions</p>
