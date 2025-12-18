@@ -6,7 +6,19 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
+<header class="site-header-nav">
+    <div class="header-left">
+        <a href="#" class="header-logo">The Market as a Mirror</a>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="#intro">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#story">Story</a></li>
+        </ul>
+    </nav>
+</header>
 <div class="hero-title animate-title">
   <h1 class="title-main">The Market as a Mirror</h1>
   <h2 class="title-sub">
@@ -14,7 +26,7 @@
   </h2>
 </div>
 
-<div class="hero-intro animate-intro">
+<div class="hero-intro animate-intro" id="intro">
     <p class="intro-label">The Pulse of the Market</p>
     <p class="intro-text">
       We believe that financial markets are not just cold algorithms or rational systems.
@@ -37,7 +49,7 @@
     </p>
   </div>
   
-  <div class="research-section animate-section">
+  <div class="research-section animate-section" id="research">
     <p class="section-label">Research Questions</p>
   
     <ul class="research-list">
@@ -68,7 +80,7 @@
     </ul>
   </div>
 
-  <div class="methodology-section">
+  <div class="methodology-section" id="methodology">
     <p class="section-label">Methodology</p>
     <p class="methodology-intro">
       To understand how markets feel, react, and recover, we perform a systematic
@@ -77,7 +89,7 @@
     </p>
   </div>
 
-  <div class="chapter-section">
+  <div class="chapter-section" id="story">
     <h3 class="section-label">The Anatomy of Fear</h3>
     <p>
       In moments of crisis, fear is often the first emotion to reach financial markets.
@@ -151,6 +163,18 @@
     <div class="viz-placeholder">[ Sector Heatmap Placeholder ]</div>
 
   </div>
-          
+  <div class="chapter-section">
+    <h3>Conclusion</h3>
+    <p>
+      Conclusion
+    </p>
+  </div>
+
+  <footer class="site-footer">
+    <p>
+      ADA Project · DataPandas · EPFL © 2025
+    </p>
+  </footer>
+  
 </body>
 </html>
