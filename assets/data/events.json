@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "9/11 attacks",
+    "headline": "September 11 attacks",
+    "start": "2001-09-11",
+    "themes": ["Geopolitics"]
+  },
+  {
+    "id": 2,
+    "name": "Hurricane Katrina",
+    "headline": "Hurricane Katrina",
+    "start": "2005-08-29",
+    "themes": ["Natural disaster", "Regional economy", "Energy"]
+  },
+  {
+    "id": 3,
+    "name": "iPhone launch",
+    "headline": "iPhone announcement (Steve Jobs keynote)",
+    "start": "2007-01-09",
+    "themes": ["Innovation", "Technology"]
+  },
+  {
+    "id": 4,
+    "name": "2008 financial crisis",
+    "headline": "2008 financial crisis (Lehman Brothers bankruptcy)",
+    "start": "2008-09-15",
+    "themes": ["Economy", "Finance"]
+  },
+  {
+    "id": 5,
+    "name": "Trump elected",
+    "headline": "U.S. presidential election (Trump elected)",
+    "start": "2016-11-08",
+    "themes": ["Politics"]
+  },
+  {
+    "id": 6,
+    "name": "COVID emergency",
+    "headline": "COVID-19 pandemic (U.S. national emergency declaration)",
+    "start": "2020-03-13",
+    "themes": ["Public health", "Economy"]
+  }
+]
