@@ -341,9 +341,119 @@
       We compare returns, drawdowns, and recovery paths across industries to understand
       how capital reallocates under stress.
     </p>
-    <div class="viz-placeholder">[ Sector Heatmap Placeholder ]</div>
+
+    <div class="fear-sticky heatmap-sticky">
+      <div class="fear-sticky-inner">
+        <div class="fear-sticky-left">
+          <div class="fear-sticky-title">Sectoral Natural Selection</div>
+          <div class="chip-row">
+            <span class="chip-row-label">Event</span>
+            <div class="chip-row-items" id="heatmap-event-chips"></div>
+          </div>
+        </div>
+        <div class="fear-sticky-right">
+          <div class="selection-status" id="heatmap-selection-status">Selected: —</div>
+          <div class="update-hint" id="heatmap-update-hint">Updated</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card chart-card-full">
+      <div class="chart-card-header">
+        <div class="chart-title">Sector Heatmap</div>
+        <div class="chart-subtitle">Evolution of sector performance around the event</div>
+      </div>
+      <div class="chart-body">
+        <img id="heatmap-img" alt="Sector heatmap" loading="lazy">
+        <div class="chart-missing" data-for="heatmap-img">Image not available</div>
+      </div>
+    </div>
 
   </div>
+  <script type="module">
+    import { getAllEvents } from './assets/js/eventUtils.js';
+    import { getSectorHeatmapPath } from './assets/js/chartPathUtils.js';
+
+    const CORAL2 = '#f9624f';
+    const heatmapEventChips = document.getElementById('heatmap-event-chips');
+    const heatmapStatusEl = document.getElementById('heatmap-selection-status');
+    const heatmapUpdateHint = document.getElementById('heatmap-update-hint');
+    const heatmapImg = document.getElementById('heatmap-img');
+    const heatmapMissing = document.querySelector('[data-for="heatmap-img"]');
+
+    let heatmapEvents = [];
+    let selectedHeatmapEventId = null;
+    let heatmapHintTimer = null;
+
+    function setChipVisual(chip, active) {
+      chip.classList.toggle('active', active);
+    }
+
+    function renderHeatmapEventChips() {
+      heatmapEventChips.innerHTML = '';
+      heatmapEvents.forEach(event => {
+        const chip = document.createElement('button');
+        chip.className = 'chip';
+        chip.style.setProperty('--chip-color', CORAL2);
+        chip.textContent = event.name;
+        setChipVisual(chip, event.id === selectedHeatmapEventId);
+        chip.addEventListener('click', () => {
+          if (selectedHeatmapEventId === event.id) return;
+          selectedHeatmapEventId = event.id;
+          renderHeatmapEventChips();
+          updateHeatmap();
+        });
+        heatmapEventChips.appendChild(chip);
+      });
+    }
+
+    function showHeatmapHint() {
+      heatmapUpdateHint.classList.add('show');
+      if (heatmapHintTimer) clearTimeout(heatmapHintTimer);
+      heatmapHintTimer = setTimeout(() => heatmapUpdateHint.classList.remove('show'), 900);
+    }
+
+    function updateHeatmapStatus() {
+      const event = heatmapEvents.find(item => item.id === selectedHeatmapEventId);
+      heatmapStatusEl.textContent = event ? `Selected: ${event.name}` : 'Selected: —';
+    }
+
+    function setHeatmapImage(src, alt) {
+      if (!heatmapImg || !heatmapMissing) return;
+      if (!src) {
+        heatmapImg.removeAttribute('src');
+        heatmapMissing.classList.add('visible');
+        return;
+      }
+      heatmapMissing.classList.remove('visible');
+      heatmapImg.onload = () => heatmapMissing.classList.remove('visible');
+      heatmapImg.onerror = () => {
+        heatmapMissing.classList.add('visible');
+        heatmapImg.removeAttribute('src');
+      };
+      heatmapImg.src = src;
+      heatmapImg.alt = alt;
+    }
+
+    async function updateHeatmap() {
+      const path = await getSectorHeatmapPath(selectedHeatmapEventId);
+      const event = heatmapEvents.find(item => item.id === selectedHeatmapEventId);
+      const descriptor = event ? `Sector Heatmap — ${event.name}` : 'Sector Heatmap';
+      updateHeatmapStatus();
+      setHeatmapImage(path, descriptor);
+      showHeatmapHint();
+    }
+
+    (async function initHeatmap() {
+      heatmapEvents = await getAllEvents();
+      if (!heatmapEvents.length) return;
+      selectedHeatmapEventId = heatmapEvents[0].id;
+      renderHeatmapEventChips();
+      await updateHeatmap();
+    })().catch(error => {
+      console.error('Failed to initialize heatmap section', error);
+    });
+  </script>
   <div class="chapter-section">
     <h3>The Speed of Contagion</h3>
     <p>
