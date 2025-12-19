@@ -40,3 +40,12 @@ export async function getAllEventItems() {
   const events = await loadEvents();
   return events.map(toTimelineItem);
 }
+
+export async function getEventById(id) {
+  const events = await loadEvents();
+  return events.find(item => item.id === Number(id)) || null;
+}
+
+export async function getAllEvents() {
+  return loadEvents();
+}

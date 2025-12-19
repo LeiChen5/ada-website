@@ -1,0 +1,38 @@
+[
+  {
+    "key": "1",
+    "label": "Basic Industries",
+    "color": "#8B7DAA",
+    "folderName": "Basic_Industries"
+  },
+  {
+    "key": "2",
+    "label": "Energy",
+    "color": "#E3B23C",
+    "folderName": "Energy"
+  },
+  {
+    "key": "3",
+    "label": "Finance",
+    "color": "#7FB69B",
+    "folderName": "Finance"
+  },
+  {
+    "key": "4",
+    "label": "Health Care",
+    "color": "#B56576",
+    "folderName": "Health_Care"
+  },
+  {
+    "key": "5",
+    "label": "Technology",
+    "color": "#6C91BF",
+    "folderName": "Technology"
+  },
+  {
+    "key": "6",
+    "label": "Transportation",
+    "color": "#8A8F98",
+    "folderName": "Transportation"
+  }
+]

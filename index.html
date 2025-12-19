@@ -122,26 +122,213 @@
     </p>
   </div>
 
-  <div class="chapter-section" id="story">
-    <h3 class="section-label">The Anatomy of Fear</h3>
-    <p>
-      In moments of crisis, fear is often the first emotion to reach financial markets.
-      In this chapter, we examine how sudden global shocks trigger spikes in volatility,
-      abnormal trading volumes, and sharp price movements.
-    </p>
-    <p>
-      By aligning crisis timelines with market indicators, we identify the initial
-      physiological response of the market — its reflexive reaction to uncertainty.
-    </p>
-    <iframe
-        src="assets/visualizations/animated_bar_chart.html"
-        width="100%"
-        height="520"
-        frameborder="0"
-        scrolling="no">
-      </iframe>
+  <div class="chapter-section fear-section" id="story">
+    <div class="fear-copy">
+      <h3 class="section-label">The Anatomy of Fear</h3>
+      <p>
+        In moments of crisis, fear is often the first emotion to reach financial markets.
+        In this chapter, we examine how sudden global shocks trigger spikes in volatility,
+        abnormal trading volumes, and sharp price movements.
+      </p>
+      <p>
+        By aligning crisis timelines with market indicators, we identify the initial
+        physiological response of the market — its reflexive reaction to uncertainty.
+      </p>
+    </div>
+
+    <div class="fear-sticky">
+      <div class="fear-sticky-inner">
+        <div class="fear-sticky-left">
+          <div class="fear-sticky-title"></div>
+          <div class="chip-row">
+            <span class="chip-row-label">Event</span>
+            <div class="chip-row-items" id="event-chips"></div>
+          </div>
+          <div class="chip-row">
+            <span class="chip-row-label">Sector</span>
+            <div class="chip-row-items" id="sector-chips"></div>
+          </div>
+        </div>
+        <div class="fear-sticky-right">
+          <div class="selection-status" id="selection-status">
+            Selected: —
+          </div>
+          <div class="update-hint" id="update-hint">Updated</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fear-charts">
+      <div class="chart-card chart-card-full">
+        <div class="chart-card-header">
+          <div class="chart-title">CAR</div>
+          <div class="chart-subtitle">Cumulative abnormal returns around the event</div>
+        </div>
+        <div class="chart-body">
+          <img id="chart-car" alt="CAR chart" loading="lazy">
+          <div class="chart-missing" data-for="chart-car">Image not available</div>
+        </div>
+      </div>
+
+      <div class="chart-card chart-card-full">
+        <div class="chart-card-header">
+          <div class="chart-title">Drawdown</div>
+          <div class="chart-subtitle">Depth and duration of market drops</div>
+        </div>
+        <div class="chart-body">
+          <img id="chart-drawdown" alt="Drawdown chart" loading="lazy">
+          <div class="chart-missing" data-for="chart-drawdown">Image not available</div>
+        </div>
+      </div>
+
+      <div class="chart-card chart-card-full">
+        <div class="chart-card-header">
+          <div class="chart-title">Volcano</div>
+          <div class="chart-subtitle">Cross-sectional impact during the shock</div>
+        </div>
+        <div class="chart-body">
+          <img id="chart-volcano" alt="Volcano chart" loading="lazy">
+          <div class="chart-missing" data-for="chart-volcano">Image not available</div>
+        </div>
+      </div>
+    </div>
 
   </div>
+  <script type="module">
+    import { getAllEvents } from './assets/js/eventUtils.js';
+    import { getAllSectors } from './assets/js/sectorUtils.js';
+    import { getChartPaths } from './assets/js/chartPathUtils.js';
+
+    const CORAL = '#f9624f';
+    const eventChips = document.getElementById('event-chips');
+    const sectorChips = document.getElementById('sector-chips');
+    const statusEl = document.getElementById('selection-status');
+    const updateHint = document.getElementById('update-hint');
+
+    const chartEls = {
+      car: document.getElementById('chart-car'),
+      drawdown: document.getElementById('chart-drawdown'),
+      volcano: document.getElementById('chart-volcano')
+    };
+
+    const missingEls = {
+      car: document.querySelector('[data-for="chart-car"]'),
+      drawdown: document.querySelector('[data-for="chart-drawdown"]'),
+      volcano: document.querySelector('[data-for="chart-volcano"]')
+    };
+
+    let events = [];
+    let sectors = [];
+    let selectedEventId = null;
+    let selectedSectorKey = null;
+    let hintTimer = null;
+
+    function setChipVisual(chip, active) {
+      chip.classList.toggle('active', active);
+    }
+
+    function renderEventChips() {
+      eventChips.innerHTML = '';
+      events.forEach(event => {
+        const chip = document.createElement('button');
+        chip.className = 'chip';
+        chip.style.setProperty('--chip-color', CORAL);
+        chip.textContent = event.name;
+        setChipVisual(chip, event.id === selectedEventId);
+        chip.addEventListener('click', () => {
+          if (selectedEventId === event.id) return;
+          selectedEventId = event.id;
+          renderEventChips();
+          updateSelection();
+        });
+        eventChips.appendChild(chip);
+      });
+    }
+
+    function renderSectorChips() {
+      sectorChips.innerHTML = '';
+      sectors.forEach(sector => {
+        const chip = document.createElement('button');
+        chip.className = 'chip';
+        chip.style.setProperty('--chip-color', sector.color || CORAL);
+        chip.textContent = sector.label;
+        setChipVisual(chip, String(sector.key) === String(selectedSectorKey));
+        chip.addEventListener('click', () => {
+          if (String(selectedSectorKey) === String(sector.key)) return;
+          selectedSectorKey = sector.key;
+          renderSectorChips();
+          updateSelection();
+        });
+        sectorChips.appendChild(chip);
+      });
+    }
+
+    function updateStatus() {
+      const event = events.find(item => item.id === selectedEventId);
+      const sector = sectors.find(item => String(item.key) === String(selectedSectorKey));
+      if (!event || !sector) {
+        statusEl.textContent = 'Selected: —';
+        return;
+      }
+      statusEl.textContent = `Selected: ${event.name} × ${sector.label}`;
+    }
+
+    function showUpdateHint() {
+      updateHint.classList.add('show');
+      if (hintTimer) clearTimeout(hintTimer);
+      hintTimer = setTimeout(() => updateHint.classList.remove('show'), 900);
+    }
+
+    function setChart(target, missingEl, src, alt) {
+      if (!target || !missingEl) return;
+      if (!src) {
+        target.removeAttribute('src');
+        missingEl.classList.add('visible');
+        return;
+      }
+      missingEl.classList.remove('visible');
+      target.onload = () => missingEl.classList.remove('visible');
+      target.onerror = () => {
+        missingEl.classList.add('visible');
+        target.removeAttribute('src');
+      };
+      target.src = src;
+      target.alt = alt;
+    }
+
+    async function updateCharts() {
+      const paths = await getChartPaths(selectedEventId, selectedSectorKey);
+      const event = events.find(item => item.id === selectedEventId);
+      const sector = sectors.find(item => String(item.key) === String(selectedSectorKey));
+      const descriptor = event && sector ? `${event.name} × ${sector.label}` : '';
+
+      setChart(chartEls.car, missingEls.car, paths.car, `CAR — ${descriptor}`);
+      setChart(chartEls.drawdown, missingEls.drawdown, paths.drawdown, `Drawdown — ${descriptor}`);
+      setChart(chartEls.volcano, missingEls.volcano, paths.volcano, `Volcano — ${descriptor}`);
+    }
+
+    async function updateSelection() {
+      updateStatus();
+      await updateCharts();
+      showUpdateHint();
+    }
+
+    (async function initFear() {
+      events = await getAllEvents();
+      sectors = await getAllSectors();
+
+      if (!events.length || !sectors.length) return;
+
+      selectedEventId = events[0].id;
+      selectedSectorKey = sectors[0].key;
+
+      renderEventChips();
+      renderSectorChips();
+      await updateSelection();
+    })().catch(error => {
+      console.error('Failed to initialize fear section', error);
+    });
+  </script>
   <div class="chapter-section">
     <h3>Sectoral Natural Selection</h3>
     <p>

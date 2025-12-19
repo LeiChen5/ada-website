@@ -399,6 +399,219 @@ hr {
     transform: translateY(0);
   }
 }
+
+:root {
+  --coral: #f9624f;
+  --card-border: #e5e7eb;
+  --card-bg: #ffffff;
+  --chip-text: #1f2937;
+}
+
+.fear-section {
+  margin-top: 80px;
+}
+
+.fear-copy {
+  max-width: 880px;
+  margin: 0 auto 12px;
+}
+
+.fear-sticky {
+  position: sticky;
+  top: 12px;
+  z-index: 5;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  margin: 24px -50px 32px;
+  width: calc(100% + 100px);
+}
+
+.fear-sticky-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fear-sticky-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.chip-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.chip-row-label {
+  font-size: 0.92rem;
+  color: #6b7280;
+  min-width: 60px;
+}
+
+.chip-row-items {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  --chip-color: var(--coral);
+  border: 1px solid var(--chip-color);
+  background: #fff;
+  color: var(--chip-text);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chip:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.chip.active {
+  background: var(--chip-color);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.fear-sticky-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.selection-status {
+  font-weight: 700;
+  color: #111827;
+}
+
+.update-hint {
+  color: var(--coral);
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.update-hint.show {
+  opacity: 1;
+}
+
+.fear-charts {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.chart-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 14px 16px 16px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06);
+  flex: 1;
+}
+
+.chart-card-full {
+  width: 100%;
+}
+
+.chart-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.chart-title {
+  font-weight: 700;
+  color: #111827;
+}
+
+.chart-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.chart-body {
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f9fafb, #eef2ff);
+}
+
+.chart-body img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.chart-missing {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: repeating-linear-gradient(45deg, #f9fafb, #f9fafb 10px, #edf2f7 10px, #edf2f7 20px);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.chart-missing.visible {
+  opacity: 1;
+}
+
+.chart-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.chart-row .chart-card {
+  flex: 1 1 320px;
+}
+
+@media (max-width: 980px) {
+  .fear-sticky-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fear-sticky-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .fear-sticky {
+    margin: 20px 0 28px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .chart-body {
+    min-height: 260px;
+  }
+}
 .methodology-section {
   max-width: 900px;
   margin: 100px auto 0;
