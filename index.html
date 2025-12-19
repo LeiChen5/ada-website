@@ -71,7 +71,8 @@
       const items = new vis.DataSet(await getAllEventItems());
       const options = {
         autoResize: true,
-        showCurrentTime: false
+        showCurrentTime: false,
+        locale: 'en'
       };
       const container = document.getElementById('timeline');
       return new vis.Timeline(container, items, options);
