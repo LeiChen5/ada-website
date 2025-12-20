@@ -146,6 +146,95 @@
       autopsy of financial crises. Each chapter dissects a different mechanism through
       which global events translate into market behavior.
     </p>
+
+    <div class="methodology-block sampling-block">
+      <div class="methodology-copy">
+        <p class="method-kicker">Data construction & sampling strategy</p>
+        <h4 class="method-block-title">Méthodologie</h4>
+        <ul class="method-list">
+          <li><strong>Stock selection.</strong> The initial dataset (more than 8,000 assets) required rigorous selection to create a representative and usable sample.</li>
+          <li><strong>Exclusion of ETFs.</strong> These instruments are composed of several stocks, often from different sectors. We excluded them to avoid ambiguity in sector analysis.</li>
+          <li><strong>Classification.</strong> Stocks were classified across six sectors and segmented by market capitalisation size (small, medium, large).</li>
+          <li><strong>Sampling.</strong> Ten stocks were selected for each sector-size combination, giving 30 shares per sector.</li>
+          <li><strong>Assembly.</strong> Results were pooled by sector using averages to ensure robustness and limit the influence of isolated company behaviour.</li>
+        </ul>
+      </div>
+      <div class="method-visual">
+        <div class="method-visual-inner">
+          <p class="method-visual-title">Sampling schematic</p>
+          <p class="method-visual-desc">Left: full universe (8k+). Right: curated per sector/size. Placeholder graphic.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics-block">
+      <div class="methodology-copy">
+        <p class="method-kicker">Quantitative measures</p>
+        <h4 class="method-block-title">Mathematics behind analysis</h4>
+        <p class="method-paragraph">
+          In order to characterise the reaction of financial markets to the events studied, the analysis is based on three main quantitative variables: cumulative abnormal returns (CAR), drawdown (in depth and duration) and recovery time after an event.
+        </p>
+      </div>
+
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-topline">
+            <div>
+              <div class="metric-title">CAR</div>
+              <div class="metric-subtitle">Relative to QQQ</div>
+            </div>
+            <span class="metric-tag">Performance</span>
+          </div>
+          <p class="metric-intuition">
+            CAR measures the performance of an asset relative to the market (QQQ), isolating sector-specific moves from the broad trend.
+          </p>
+          <pre class="metric-formula">AR<sub>i,t</sub> = R<sub>i,t</sub> - R<sub>m,t</sub>
+CAR<sub>i</sub>(t<sub>1</sub>, t<sub>2</sub>) = Σ AR<sub>i,t</sub></pre>
+          <ul class="metric-interpretation">
+            <li><strong>Positive:</strong> outperforming the market.</li>
+            <li><strong>Negative:</strong> underperforming the market.</li>
+          </ul>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-topline">
+            <div>
+              <div class="metric-title">Drawdown</div>
+              <div class="metric-subtitle">Depth & duration</div>
+            </div>
+            <span class="metric-tag">Risk</span>
+          </div>
+          <p class="metric-intuition">
+            Drawdown captures the maximum loss from a peak and how long it takes to climb back, revealing shock severity and persistence.
+          </p>
+          <pre class="metric-formula">DD<sub>t</sub> = (P<sub>t</sub> - max(P)) / max(P)
+depth = min(DD<sub>t</sub>)
+duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
+          <ul class="metric-interpretation">
+            <li><strong>Deep:</strong> high exposure to downside risk.</li>
+            <li><strong>Long:</strong> slow absorption and correction of the shock.</li>
+          </ul>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-topline">
+            <div>
+              <div class="metric-title">Recovery</div>
+              <div class="metric-subtitle">Time back to pre-event</div>
+            </div>
+            <span class="metric-tag">Resilience</span>
+          </div>
+          <p class="metric-intuition">
+            Recovery time measures how quickly an asset returns to its pre-event peak; if never regained, the horizon is censored.
+          </p>
+          <pre class="metric-formula">T<sub>rec</sub> = t<sub>rec</sub> - t<sub>peak</sub></pre>
+          <ul class="metric-interpretation">
+            <li><strong>Short:</strong> fast rebound and resilient sector.</li>
+            <li><strong>Long/NA:</strong> persistent damage or incomplete recovery.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="chapter-section fear-section" id="story">
