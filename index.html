@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>The Market as a Mirror</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css">
-  <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+  <link rel="stylesheet" href="assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">
+  <script src="assets/vendor/vis-timeline/vis-timeline-graph2d.min.js"></script>
 
 </head>
 <body>
@@ -39,28 +39,6 @@
     </iframe>
 </div>
 
-<div class="hero-intro animate-intro" id="intro">
-    <p class="intro-label">The Pulse of the Market</p>
-    <p class="intro-text">
-      We believe that financial markets are not just cold algorithms or rational systems.
-      They are living, social organisms that react to human emotions, communication,
-      and collective excitement or fear.
-      <br><br>
-      Over the past 25 years, our world has been shaken by wars, pandemics, innovations,
-      and political shocks. Through every one of these moments, the market has mirrored
-      human behavior, instantly turning global emotions into data, volatility,
-      and price movements.
-      <br><br>
-      Before 2010, reactions followed news; after social media, they followed people —
-      a single tweet could move billions.
-      In this project, we explore how both global and social events, whether positive
-      or negative, shape market behavior and investor sentiment.
-      <br><br>
-      By linking financial data with major world events, we measure how fear, hope,
-      and herd dynamics spread through sectors.
-      Ultimately, our goal is to show that markets don’t just move — <strong>they feel</strong>.
-    </p>
-  </div>
   <div class="timeline-container">
     <div id="timeline"></div>
   </div>
@@ -69,10 +47,18 @@
 
     async function renderTimeline() {
       const items = new vis.DataSet(await getAllEventItems());
+      const bounds = {
+        min: '2000-01-01',
+        max: '2025-10-31'
+      };
       const options = {
-        autoResize: true,
+        autoResize: false,
         showCurrentTime: false,
-        locale: 'en'
+        locale: 'en',
+        start: bounds.min,
+        end: bounds.max,
+        min: bounds.min,
+        max: bounds.max
       };
       const container = document.getElementById('timeline');
       return new vis.Timeline(container, items, options);
@@ -82,7 +68,23 @@
       console.error('Failed to render timeline', error);
     });
   </script>
-  
+
+<div class="hero-intro animate-intro" id="intro">
+    <p class="intro-label">The Pulse of the Market</p>
+    <p class="intro-text">
+      We believe that financial markets do not only depend on  cold algorithms or rational 
+      systems. They are living, social organisms.  They are shaped by human emotions, 
+      communication, and collective excitement or fear. Beneath the charts and models lies
+       a system that reacts, hesitates, panics, adapts, and sometimes heals.
+      <br><br>
+      Over the past 25 years, the world has been repeatedly shaken by events that escaped
+       prediction and control. Terrorist attacks, natural disasters, technological 
+       breakthroughs, political ruptures, and global health crises have punctuated recent 
+       history. Each time, markets responded almost instantly. Not by thinking — but by 
+       feeling. Fear turned into volatility. Hope into rallies. Uncertainty into sharp,
+        collective movements across sectors.
+    </p>
+  </div>
   <div class="research-section animate-section" id="research">
     <p class="section-label">Research Questions</p>
   

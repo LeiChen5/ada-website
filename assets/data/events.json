@@ -2,43 +2,44 @@
   {
     "id": 1,
     "name": "9/11 attacks",
-    "headline": "September 11 attacks",
+    "headline": "September 11, 2001 — A sudden geopolitical shock driven by fear and uncertainty rather than economic fundamentals.",
     "start": "2001-09-11",
     "themes": ["Geopolitics"]
   },
   {
     "id": 2,
     "name": "Hurricane Katrina",
-    "headline": "Hurricane Katrina",
+    "headline": "August 29, 2005 — A natural disaster revealing regional fragility, infrastructure failure, and energy dependence.",
     "start": "2005-08-29",
     "themes": ["Natural disaster", "Regional economy", "Energy"]
   },
   {
     "id": 3,
     "name": "iPhone launch",
-    "headline": "iPhone announcement (Steve Jobs keynote)",
+    "headline": "January 9, 2007 — A technological breakthrough representing a positive yet deeply disruptive innovation shock.",
     "start": "2007-01-09",
     "themes": ["Innovation", "Technology"]
   },
   {
     "id": 4,
     "name": "2008 financial crisis",
-    "headline": "2008 financial crisis (Lehman Brothers bankruptcy)",
+    "headline": "September 15, 2008 — A systemic financial collapse originating from within the market itself.",
     "start": "2008-09-15",
     "themes": ["Economy", "Finance"]
   },
   {
     "id": 5,
     "name": "Trump elected",
-    "headline": "U.S. presidential election (Trump elected)",
+    "headline": "November 8, 2016 — A political rupture shaped by expectations, narratives, and collective anticipation.",
     "start": "2016-11-08",
     "themes": ["Politics"]
   },
   {
     "id": 6,
     "name": "COVID emergency",
-    "headline": "COVID-19 pandemic (U.S. national emergency declaration)",
+    "headline": "March 13, 2020 — A global health crisis that rapidly evolved into a human, economic, and systemic shock.",
     "start": "2020-03-13",
     "themes": ["Public health", "Economy"]
   }
 ]
+

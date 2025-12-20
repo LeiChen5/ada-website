@@ -20,7 +20,7 @@ function toTimelineItem(event) {
     id: event.id,
     content: event.name,
     start: event.start,
-    title: `<strong>${event.headline || event.name}</strong><br>Theme: ${formatThemes(event.themes)}`
+    title: `<div class="timeline-tooltip"><strong>${event.name}</strong><br>${event.headline}</div>`
   };
 }
 
