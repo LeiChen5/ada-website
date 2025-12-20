@@ -583,8 +583,23 @@ hr {
 
 .fear-sticky-right {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.insight-body {
+  margin: 0;
+  color: #6b7280;
+  font-size: 12px !important;
+  line-height: 1.15;
 }
 
 .selection-status {
@@ -595,6 +610,7 @@ hr {
 .update-hint {
   color: var(--coral);
   font-weight: 700;
+  font-size: 0.8rem;
   opacity: 0;
   transition: opacity 0.25s ease;
 }
@@ -734,9 +750,7 @@ hr {
   }
 
   .fear-sticky-right {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+    gap: 8px;
   }
 
   .selection-status {

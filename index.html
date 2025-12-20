@@ -241,13 +241,16 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     <div class="fear-copy">
       <h3 class="section-label">The Anatomy of Fear</h3>
       <p>
-        In moments of crisis, fear is often the first emotion to reach financial markets.
-        In this chapter, we examine how sudden global shocks trigger spikes in volatility,
-        abnormal trading volumes, and sharp price movements.
+      Market reactions to sudden shocks are rarely uniform. Some events trigger abrupt drops, others lead to hesitation, and a few are followed by rapid recoveries or even rallies. What appears as a simple deviation often hides very different dynamics.
       </p>
       <p>
-        By aligning crisis timelines with market indicators, we identify the initial
-        physiological response of the market — its reflexive reaction to uncertainty.
+       This raises a central question: when an unexpected event occurs, how does the market respond in its very first moments? Is there a common pattern, or does each shock generate a distinct reaction shaped by context and expectations?
+      </p>
+      <p> 
+      To explore this, we begin at the aggregate level. We examine the behavior of the QQQ index around six major U.S. events, aligning each trajectory at the event date to isolate the market’s immediate response, independent of long-term trends.
+      </p>
+      <p>
+      This chapter focuses on these initial reactions. By analyzing short-term market and sector-level behavior, we observe how uncertainty first manifests in the system whether it takes the form of fear, euphoria, or something in between.
       </p>
     </div>
 
@@ -265,10 +268,15 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
           </div>
         </div>
         <div class="fear-sticky-right">
-          <div class="selection-status" id="selection-status">
-            Selected: —
+          <div class="status-row">
+            <div class="selection-status" id="selection-status">
+              Selected: —
+            </div>
+            <div class="update-hint" id="update-hint">Updated</div>
           </div>
-          <div class="update-hint" id="update-hint">Updated</div>
+          <p class="insight-body" id="insight-body">
+            Select an event and sector above to reveal the narrative written in the insight JSON file.
+          </p>
         </div>
       </div>
     </div>
@@ -308,11 +316,27 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       </div>
     </div>
 
+    <div class="fear-copy">
+      <p>
+        Across the six events and thirty-six sectoral reactions, one insight emerges clearly: fear and euphoria do not enter the market uniformly. They follow distinct paths, shaped by the nature of the shock and the structural role of each sector.
+      </p> 
+      <p>
+        Fear appears first as an imbalance. In sudden crises such as geopolitical attacks, financial collapses, or global health emergencies, it manifests immediately and violently, producing sharp drawdowns and intense trading activity. In these moments, sectors directly exposed to trust, mobility, liquidity, or global demand amplify stress, while more defensive sectors absorb it. The market fragments. 
+      </p>
+      <p>
+        In contrast, not all disruptions trigger fear. Innovation-driven events and political shifts often give rise to anticipation rather than panic. In these cases, optimism remains concentrated, benefiting specific sectors while leaving others largely unaffected. Euphoria, unlike fear, does not spread systemically. It is selective. This asymmetry reveals a key feature of market behavior. Fear tends to propagate quickly and broadly, erasing sectoral boundaries during extreme stress. Euphoria, on the other hand, remains localized, reinforcing existing structures rather than dismantling them. The market does not simply react to events; it interprets them. Ultimately, this chapter answers the first research question: the anatomy of fear and euphoria is neither random nor symmetric. The same market can panic, hesitate, or rally depending on how a shock is perceived and which parts of the system are most exposed. The earliest reactions already contain the blueprint of what follows.
+      </p>
+      <p>
+        Understanding these first moments is essential. Before resilience can be measured, before recovery can be compared, the initial form of fear must be observed. The next chapter explores whether these early reactions translate into longer-term patterns or whether survival in the market follows a different logic altogether.
+      </p>
+    </div>
+
   </div>
   <script type="module">
     import { getAllEvents } from './assets/js/eventUtils.js';
     import { getAllSectors } from './assets/js/sectorUtils.js';
     import { getChartPaths } from './assets/js/chartPathUtils.js';
+    import { getInsight } from './assets/js/insightUtils.js';
 
     const CORAL = '#f9624f';
     const eventChips = document.getElementById('event-chips');
@@ -331,6 +355,8 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       drawdown: document.querySelector('[data-for="chart-drawdown"]'),
       volcano: document.querySelector('[data-for="chart-volcano"]')
     };
+
+    const insightBody = document.getElementById('insight-body');
 
     let events = [];
     let sectors = [];
@@ -422,9 +448,23 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       setChart(chartEls.volcano, missingEls.volcano, paths.volcano, `Volcano — ${descriptor}`);
     }
 
+    async function updateInsight() {
+      const event = events.find(item => item.id === selectedEventId);
+      const sector = sectors.find(item => String(item.key) === String(selectedSectorKey));
+
+      if (!event || !sector) {
+        insightBody.textContent = 'Select a combination above to read the interpretation.';
+        return;
+      }
+
+      const insight = await getInsight(selectedEventId, selectedSectorKey);
+      const fallback = `${event.name} × ${sector.label}`;
+      insightBody.textContent = insight?.insight || `No interpretation has been written for ${fallback}.`;
+    }
+
     async function updateSelection() {
       updateStatus();
-      await updateCharts();
+      await Promise.all([updateCharts(), updateInsight()]);
       showUpdateHint();
     }
 

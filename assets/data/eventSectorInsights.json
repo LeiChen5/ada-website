@@ -1,0 +1,218 @@
+[
+  {
+    "eventId": 1,
+    "sectorKey": "6",
+    "title": "September 11 Attacks × Transport",
+    "insight": "The transport sector reacts sharply around the event date, with an immediate drop in cumulative abnormal returns. The drawdown is deep and abrupt, reflecting the sudden collapse in confidence and mobility. Trading volumes spike strongly, indicating panic-driven reallocation rather than gradual adjustment. Recovery remains slow and incomplete within the observation window, suggesting persistent uncertainty. Transport appears as one of the most directly exposed sectors to geopolitical fear."
+  },
+  {
+    "eventId": 1,
+    "sectorKey": "5",
+    "title": "September 11 Attacks × Technology",
+    "insight": "Technology shows a pronounced negative reaction shortly after the shock, but less violent than transport. The drawdown deepens over several days, indicating delayed fear rather than instant collapse. Abnormal trading activity increases, yet remains more contained, suggesting cautious repositioning. Recovery begins earlier than in transport, though volatility remains elevated. The sector absorbs fear with hesitation rather than panic."
+  },
+  {
+    "eventId": 1,
+    "sectorKey": "4",
+    "title": "September 11 Attacks × Health Care",
+    "insight": "Health care displays a comparatively muted reaction. CARs remain close to zero, and the drawdown is limited in both depth and duration. Trading volumes show only a modest increase, signaling relative investor confidence. The sector appears partially insulated from the shock, acting as a defensive refuge. Fear is present, but largely absorbed without structural damage."
+  },
+  {
+    "eventId": 1,
+    "sectorKey": "3",
+    "title": "September 11 Attacks × Finance",
+    "insight": "The financial sector experiences a strong negative shock, with rapidly deteriorating CARs following the event. Drawdowns deepen quickly, reflecting systemic stress and liquidity concerns. The volcano plot highlights intense trading activity, suggesting widespread reallocation and uncertainty. Recovery is slow, indicating that fear propagates through financial intermediaries. Finance acts as a transmission channel rather than a buffer."
+  },
+  {
+    "eventId": 1,
+    "sectorKey": "2",
+    "title": "September 11 Attacks × Energy",
+    "insight": "Energy reacts moderately at first, with CARs declining less sharply than the broader market. The drawdown remains contained, though volatility increases noticeably. Trading activity rises, reflecting uncertainty around supply risks and geopolitical tensions. The sector neither collapses nor stabilizes immediately. Energy absorbs fear unevenly, caught between risk and strategic relevance."
+  },
+  {
+    "eventId": 1,
+    "sectorKey": "1",
+    "title": "September 11 Attacks × Basic Industries",
+    "insight": "Basic industries show a delayed but persistent negative reaction. CARs drift downward after the event, and the drawdown deepens gradually rather than abruptly. Trading volumes increase moderately, suggesting adjustment rather than panic. Recovery remains slow, reflecting sensitivity to global economic uncertainty. Fear enters the sector indirectly, through expectations of reduced demand."
+  },
+  {
+    "eventId": 2,
+    "sectorKey": "6",
+    "title": "Hurricane Katrina × Transport",
+    "insight": "The transport sector reacts negatively in the days following the hurricane, though the initial shock is less abrupt than for geopolitical events. CARs drift downward progressively, reflecting disruptions to logistics and regional mobility. The drawdown deepens over time rather than instantaneously, suggesting delayed realization of economic impact. Trading volumes increase moderately, indicating adjustment rather than panic. Fear emerges through operational disruption rather than immediate shock."
+  },
+  {
+    "eventId": 2,
+    "sectorKey": "5",
+    "title": "Hurricane Katrina × Technology",
+    "insight": "Technology shows a relatively contained reaction. CARs remain close to zero, with only mild fluctuations around the event date. The drawdown is shallow and short-lived, and abnormal trading volumes are limited. This suggests that investors perceive the shock as largely exogenous to the sector’s fundamentals. Technology appears partially insulated, with fear remaining localized elsewhere."
+  },
+  {
+    "eventId": 2,
+    "sectorKey": "4",
+    "title": "Hurricane Katrina × Health Care",
+    "insight": "Health care displays notable resilience during the event window. CARs remain stable, and drawdowns are minimal in both depth and duration. Trading activity shows little abnormal behavior, indicating sustained investor confidence. The sector appears defensive, absorbing the shock without visible stress. Fear does not propagate strongly into health-related assets."
+  },
+  {
+    "eventId": 2,
+    "sectorKey": "3",
+    "title": "Hurricane Katrina × Finance",
+    "insight": "The financial sector experiences a moderate but persistent negative reaction. CARs decline gradually, and the drawdown deepens over several days, reflecting exposure to regional economic damage and insurance-related uncertainty. Trading volumes increase, though without the explosive patterns seen in systemic crises. Recovery is slow, suggesting lingering concerns rather than acute panic. Finance reacts through exposure rather than contagion."
+  },
+  {
+    "eventId": 2,
+    "sectorKey": "2",
+    "title": "Hurricane Katrina × Energy",
+    "insight": "Energy stands out with a distinct reaction. CARs show significant volatility, reflecting uncertainty around supply disruptions and infrastructure damage. The drawdown is visible but uneven, with sharp movements in both directions. Trading volumes spike noticeably, indicating intense repositioning. Fear mixes with speculation, making the sector highly reactive to the shock."
+  },
+  {
+    "eventId": 2,
+    "sectorKey": "1",
+    "title": "Hurricane Katrina × Basic Industries",
+    "insight": "Basic industries exhibit a delayed response. CARs trend downward after the event, and the drawdown develops progressively. Trading volumes rise modestly, suggesting a reassessment of demand and production rather than immediate fear. Recovery remains slow within the observation window. The sector absorbs the shock indirectly, through expectations of broader economic slowdown."
+  },
+  {
+    "eventId": 3,
+    "sectorKey": "6",
+    "title": "iPhone Announcement × Transport",
+    "insight": "The transport sector shows little immediate reaction to the announcement. CARs remain close to zero, and drawdowns are shallow and short-lived. Trading volumes stay relatively stable, suggesting limited investor attention. The sector appears largely disconnected from the innovation shock. Fear is absent; anticipation remains sector-specific."
+  },
+  {
+    "eventId": 3,
+    "sectorKey": "5",
+    "title": "iPhone Announcement × Technology",
+    "insight": "Technology reacts positively and quickly. CARs rise shortly after the event, indicating immediate outperformance relative to the market. The drawdown is minimal, and trading volumes increase, reflecting strong investor engagement. The volcano plot highlights positive abnormal returns paired with high activity. This event illustrates optimism-driven reallocation rather than fear."
+  },
+  {
+    "eventId": 3,
+    "sectorKey": "4",
+    "title": "iPhone Announcement × Health Care",
+    "insight": "Health care shows a neutral to mildly negative response. CARs fluctuate slightly but remain close to zero, and drawdowns are limited. Trading volumes do not display significant abnormality. Investors appear largely indifferent to the innovation shock. The sector remains stable, unaffected by shifts in technological expectations."
+  },
+  {
+    "eventId": 3,
+    "sectorKey": "3",
+    "title": "iPhone Announcement × Finance",
+    "insight": "The financial sector exhibits a muted reaction. CARs hover around zero, and drawdowns are negligible. Trading activity remains moderate, suggesting no strong repositioning. The innovation does not trigger immediate financial stress or enthusiasm. Finance appears peripheral to this event."
+  },
+  {
+    "eventId": 3,
+    "sectorKey": "2",
+    "title": "iPhone Announcement × Energy",
+    "insight": "Energy displays limited reaction, with small fluctuations in CARs and shallow drawdowns. Trading volumes remain stable, indicating minimal reassessment of fundamentals. The sector does not participate in the innovation-driven optimism. The shock remains concentrated within technology-related assets."
+  },
+  {
+    "eventId": 3,
+    "sectorKey": "1",
+    "title": "iPhone Announcement × Basic Industries",
+    "insight": "Basic industries show a slight delayed reaction, with CARs drifting marginally downward. The drawdown is mild and develops gradually. Trading volumes increase modestly, suggesting cautious adjustment rather than enthusiasm. The sector does not benefit directly from the innovation shock."
+  },
+  {
+    "eventId": 4,
+    "sectorKey": "6",
+    "title": "Lehman Collapse × Transport",
+    "insight": "Transport experiences a sharp and persistent decline following the collapse. CARs drop rapidly, and drawdowns deepen significantly. Trading volumes spike, indicating panic-driven selling. Recovery is slow and incomplete within the window. Fear manifests violently, reflecting sensitivity to global economic contraction."
+  },
+  {
+    "eventId": 4,
+    "sectorKey": "5",
+    "title": "Lehman Collapse × Technology",
+    "insight": "Technology suffers substantial losses, though slightly less severe than transport. CARs decline steadily, and drawdowns are deep and prolonged. Trading volumes increase sharply, signaling widespread repositioning. Recovery remains weak, suggesting sustained uncertainty. The sector amplifies systemic fear despite long-term growth potential."
+  },
+  {
+    "eventId": 4,
+    "sectorKey": "4",
+    "title": "Lehman Collapse × Health Care",
+    "insight": "Health care shows relative resilience. CARs decline less dramatically, and drawdowns are shallower than in most other sectors. Trading volumes increase moderately. While affected, the sector absorbs part of the systemic shock. Fear is present but partially mitigated by defensive characteristics."
+  },
+  {
+    "eventId": 4,
+    "sectorKey": "3",
+    "title": "Lehman Collapse × Finance",
+    "insight": "Finance experiences the most severe reaction. CARs collapse immediately, drawdowns are extreme, and recovery is absent within the observation window. The volcano plot reveals intense trading activity, reflecting systemic panic and loss of trust. The sector becomes the epicenter of fear rather than a victim. This event defines systemic contagion."
+  },
+  {
+    "eventId": 4,
+    "sectorKey": "2",
+    "title": "Lehman Collapse × Energy",
+    "insight": "Energy reacts strongly, with CARs falling sharply and drawdowns deepening rapidly. Trading volumes spike as investors reassess demand expectations. Recovery remains limited. The sector reflects both economic contraction and commodity sensitivity. Fear spreads through macroeconomic channels."
+  },
+  {
+    "eventId": 4,
+    "sectorKey": "1",
+    "title": "Lehman Collapse × Basic Industries",
+    "insight": "Basic industries experience deep and persistent losses. CARs trend downward steadily, and drawdowns are prolonged. Trading volumes rise, indicating broad reassessment of industrial demand. Recovery is slow. The sector mirrors global economic stress rather than financial contagion directly."
+  },
+  {
+    "eventId": 5,
+    "sectorKey": "6",
+    "title": "Trump Election × Transport",
+    "insight": "Transport reacts positively after initial hesitation. CARs increase post-event, suggesting optimism around deregulation and infrastructure spending. Drawdowns are limited and short-lived. Trading volumes increase moderately. Fear dissipates quickly, replaced by anticipatory positioning."
+  },
+  {
+    "eventId": 5,
+    "sectorKey": "5",
+    "title": "Trump Election × Technology",
+    "insight": "Technology shows a mixed response. CARs fluctuate around zero, and drawdowns are shallow. Trading volumes increase slightly, reflecting uncertainty around regulation and trade policy. The sector neither panics nor rallies strongly. Reaction is cautious rather than emotional."
+  },
+  {
+    "eventId": 5,
+    "sectorKey": "4",
+    "title": "Trump Election × Health Care",
+    "insight": "Health care reacts negatively. CARs decline after the event, and drawdowns deepen gradually. Trading volumes increase, indicating investor concern around policy uncertainty. Recovery is slow. Fear enters through regulatory expectations rather than immediate economic stress."
+  },
+  {
+    "eventId": 5,
+    "sectorKey": "3",
+    "title": "Trump Election × Finance",
+    "insight": "Finance reacts positively and relatively quickly. CARs rise post-event, and drawdowns remain limited. Trading volumes increase, reflecting optimism around deregulation and fiscal policy. Fear is short-lived. The sector benefits from anticipatory narratives."
+  },
+  {
+    "eventId": 5,
+    "sectorKey": "2",
+    "title": "Trump Election × Energy",
+    "insight": "Energy shows a positive response. CARs increase steadily, and drawdowns are minimal. Trading volumes rise, indicating renewed investor interest. Expectations of favorable policy drive optimism. The sector appears reinforced rather than threatened."
+  },
+  {
+    "eventId": 5,
+    "sectorKey": "1",
+    "title": "Trump Election × Basic Industries",
+    "insight": "Basic industries respond positively with some delay. CARs trend upward, and drawdowns remain shallow. Trading volumes increase modestly. The sector benefits from expectations of infrastructure investment. Fear quickly gives way to optimism."
+  },
+  {
+    "eventId": 6,
+    "sectorKey": "6",
+    "title": "COVID-19 × Transport",
+    "insight": "Transport collapses immediately. CARs drop sharply, and drawdowns are deep and abrupt. Trading volumes spike dramatically, reflecting panic. Recovery begins late and remains incomplete within the window. The sector is among the most exposed to the shock."
+  },
+  {
+    "eventId": 6,
+    "sectorKey": "5",
+    "title": "COVID-19 × Technology",
+    "insight": "Technology initially drops but rebounds quickly. CARs turn positive within weeks, and drawdowns are short-lived. Trading volumes remain elevated, reflecting rapid reallocation. The sector transitions from fear to opportunity. Recovery is strong and fast."
+  },
+  {
+    "eventId": 6,
+    "sectorKey": "4",
+    "title": "COVID-19 × Health Care",
+    "insight": "Health care shows resilience and eventual outperformance. CARs stabilize quickly, and drawdowns are limited. Trading volumes increase, reflecting heightened attention. The sector absorbs fear and benefits from structural relevance. Recovery is rapid."
+  },
+  {
+    "eventId": 6,
+    "sectorKey": "3",
+    "title": "COVID-19 × Finance",
+    "insight": "Finance experiences sharp losses initially. CARs decline steeply, and drawdowns are deep. Trading volumes spike, signaling panic. Recovery is slower than for technology or health care. Fear persists due to economic uncertainty."
+  },
+  {
+    "eventId": 6,
+    "sectorKey": "2",
+    "title": "COVID-19 × Energy",
+    "insight": "Energy suffers extreme losses. CARs collapse, and drawdowns are among the deepest observed. Trading volumes explode, reflecting disorderly repositioning. Recovery is weak. The sector amplifies the shock rather than absorbing it."
+  },
+  {
+    "eventId": 6,
+    "sectorKey": "1",
+    "title": "COVID-19 × Basic Industries",
+    "insight": "Basic industries decline sharply, with deep drawdowns and elevated trading activity. CARs remain negative for an extended period. Recovery is slow and incomplete. The sector reflects global demand contraction. Fear propagates through economic expectations."
+  }
+]
