@@ -6,7 +6,6 @@ const BASE_PATH = './assets/img/plots';
 // Some images use T0-1 dates; map overrides where filenames differ from event.start
 const DATE_OVERRIDES = {
   1: '2001-09-11', // 9/11 event files are stamped 09-10
-  6: '2020-03-09'  // COVID files use 03-09 for drawdown/volcano
 };
 
 function eventCode(event, forCar = false) {
