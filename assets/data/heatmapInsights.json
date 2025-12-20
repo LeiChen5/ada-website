@@ -1,0 +1,32 @@
+[
+  {
+    "eventId": 1,
+    "title": "September 11 Attacks — Sectoral Heatmap",
+    "insight": "The heatmap reveals a clear fragmentation of sectoral responses. Health Care stands out with sustained positive relative performance after the event, acting as a stabilizing sector. In contrast, Energy and Transportation progressively deteriorate, reflecting prolonged exposure to geopolitical uncertainty. Finance shows short-term resilience but loses momentum over time. The pattern suggests that geopolitical fear tends to reward defensive sectors while penalizing those linked to mobility and global risk."
+  },
+  {
+    "eventId": 2,
+    "title": "Hurricane Katrina — Sectoral Heatmap",
+    "insight": "Here, the reaction is more heterogeneous and slower. Energy displays a temporary phase of strong outperformance before reversing, highlighting sensitivity to supply disruptions. Health Care remains relatively stable throughout, while Transportation underperforms persistently. Technology and Finance show limited volatility, suggesting partial insulation from a regional shock. Natural disasters appear to concentrate stress in infrastructure-dependent sectors rather than spreading it systemically."
+  },
+  {
+    "eventId": 3,
+    "title": "iPhone Announcement — Sectoral Heatmap",
+    "insight": "The innovation shock produces a sharply asymmetric pattern. Technology does not dominate immediately, but performance gradually deteriorates relative to other sectors, while Basic Industries show delayed but sustained outperformance. Energy underperforms consistently after the announcement. Unlike crisis-driven events, this heatmap shows no broad stress diffusion. Innovation shocks generate selective reallocation rather than collective fear."
+  },
+  {
+    "eventId": 4,
+    "title": "2008 Financial Crisis — Sectoral Heatmap",
+    "insight": "This heatmap shows the most coherent and persistent pattern. Finance initially outperforms briefly before collapsing, while Energy and Basic Industries suffer deep and prolonged underperformance. Health Care stands out as the most resilient sector, gradually improving over time. Transportation recovers moderately. Systemic financial crises produce long-lasting sectoral scars, with defensive sectors consistently absorbing stress better than cyclical ones."
+  },
+  {
+    "eventId": 5,
+    "title": "U.S. Presidential Election (2016) — Sectoral Heatmap",
+    "insight": "The political shock produces a sharply polarized pattern. Finance and Transportation show strong and persistent outperformance following the election, while Health Care underperforms markedly. Technology remains close to neutral. The heatmap reflects anticipatory positioning driven by policy expectations rather than fear. Political events reshape sector hierarchies instead of triggering generalized stress."
+  },
+  {
+    "eventId": 6,
+    "title": "COVID-19 Pandemic — Sectoral Heatmap",
+    "insight": "The pandemic heatmap reveals a clear and persistent divergence. Energy collapses and remains deeply negative throughout the window. Basic Industries and Transportation also underperform steadily. In contrast, Technology and Health Care show relative resilience, despite an initial shock. Unlike 2008, recovery patterns emerge quickly, but remain highly uneven. Health-driven crises amplify structural differences across sectors."
+  }
+]

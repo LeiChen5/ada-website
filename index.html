@@ -486,14 +486,19 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
   </script>
   <div class="chapter-section" id="sectoral">
     <h3>Sectoral Natural Selection</h3>
+    
     <p>
-      Not all sectors react equally to crises. Some absorb shocks, while others amplify
-      them. In this chapter, we analyze sector-level performance to identify patterns
-      of resilience and vulnerability.
+      From isolated reactions to relative outcomes
+      In Chapter 1, sectors were examined in isolation. Each reaction was treated as a standalone response to shock, allowing us to observe how fear or euphoria manifests within a given industry. This approach captured the anatomy of initial stress, but it deliberately avoided comparison.
+      This chapter adopts a different perspective.
     </p>
     <p>
-      We compare returns, drawdowns, and recovery paths across industries to understand
-      how capital reallocates under stress.
+      Rather than asking how each sector reacts on its own, we ask how sectors react relative to one another. Once the first wave of fear has passed, markets begin to differentiate. Capital flows shift, hierarchies emerge, and some industries stabilize while others continue to deteriorate. What matters is no longer the absolute reaction, but the relative position of each sector within the market.
+    </p>
+
+    <p>
+      The question becomes unavoidable: are these relative outcomes random, or does the type of crisis systematically reshape sectoral hierarchies?
+      To address this, we compare sector-level performance using heatmaps. Each heatmap provides a compressed, comparative view of the market structure around an event, revealing contrasts that are invisible when sectors are analyzed independently.
     </p>
 
     <div class="fear-sticky heatmap-sticky">
@@ -506,8 +511,13 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
           </div>
         </div>
         <div class="fear-sticky-right">
-          <div class="selection-status" id="heatmap-selection-status">Selected: —</div>
-          <div class="update-hint" id="heatmap-update-hint">Updated</div>
+          <div class="status-row">
+            <div class="selection-status" id="heatmap-selection-status">Selected: —</div>
+            <div class="update-hint" id="heatmap-update-hint">Updated</div>
+          </div>
+          <p class="insight-body" id="heatmap-insight-body">
+            Select an event above to read the heatmap interpretation.
+          </p>
         </div>
       </div>
     </div>
@@ -527,6 +537,7 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
   <script type="module">
     import { getAllEvents } from './assets/js/eventUtils.js';
     import { getSectorHeatmapPath } from './assets/js/chartPathUtils.js';
+    import { getHeatmapInsight } from './assets/js/heatmapInsightUtils.js';
 
     const CORAL2 = '#f9624f';
     const heatmapEventChips = document.getElementById('heatmap-event-chips');
@@ -534,6 +545,7 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     const heatmapUpdateHint = document.getElementById('heatmap-update-hint');
     const heatmapImg = document.getElementById('heatmap-img');
     const heatmapMissing = document.querySelector('[data-for="heatmap-img"]');
+    const heatmapInsightBody = document.getElementById('heatmap-insight-body');
 
     let heatmapEvents = [];
     let selectedHeatmapEventId = null;
@@ -595,7 +607,18 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       const descriptor = event ? `Sector Heatmap — ${event.name}` : 'Sector Heatmap';
       updateHeatmapStatus();
       setHeatmapImage(path, descriptor);
+      await updateHeatmapInsight(event);
       showHeatmapHint();
+    }
+
+    async function updateHeatmapInsight(event) {
+      if (!heatmapInsightBody) return;
+      if (!event) {
+        heatmapInsightBody.textContent = 'Select an event above to read the heatmap interpretation.';
+        return;
+      }
+      const insight = await getHeatmapInsight(event.id);
+      heatmapInsightBody.textContent = insight?.insight || `No interpretation has been written for ${event.name}.`;
     }
 
     (async function initHeatmap() {
