@@ -1,0 +1,522 @@
+sector,symbol,event_id,event_name,t0_date,recovery_time
+Basic Industries subset extended,ADES,E002,Hurricane Katrina,2005-08-29,30.0
+Basic Industries subset extended,ADES,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,90.0
+Basic Industries subset extended,ADES,E005,U.S. presidential election (Trump elected),2016-11-08,
+Basic Industries subset extended,ADES,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Basic Industries subset extended,AMTX,E005,U.S. presidential election (Trump elected),2016-11-08,43.0
+Basic Industries subset extended,AMTX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,7.0
+Basic Industries subset extended,APWC,E002,Hurricane Katrina,2005-08-29,28.0
+Basic Industries subset extended,APWC,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Basic Industries subset extended,APWC,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,15.0
+Basic Industries subset extended,APWC,E005,U.S. presidential election (Trump elected),2016-11-08,7.0
+Basic Industries subset extended,APWC,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,89.0
+Basic Industries subset extended,AQMS,E005,U.S. presidential election (Trump elected),2016-11-08,
+Basic Industries subset extended,AQMS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,20.0
+Basic Industries subset extended,BBCP,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,89.0
+Basic Industries subset extended,CENX,E001,September 11 attacks,2001-09-11,98.0
+Basic Industries subset extended,CENX,E002,Hurricane Katrina,2005-08-29,3.0
+Basic Industries subset extended,CENX,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Basic Industries subset extended,CENX,E005,U.S. presidential election (Trump elected),2016-11-08,
+Basic Industries subset extended,CENX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,53.0
+Basic Industries subset extended,CLXT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Basic Industries subset extended,EVGN,E005,U.S. presidential election (Trump elected),2016-11-08,6.0
+Basic Industries subset extended,EVGN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Basic Industries subset extended,GEVO,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,21.0
+Basic Industries subset extended,GPP,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Basic Industries subset extended,GPRE,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Basic Industries subset extended,GPRE,E005,U.S. presidential election (Trump elected),2016-11-08,13.0
+Basic Industries subset extended,GPRE,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,52.0
+Basic Industries subset extended,LOOP,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,31.0
+Basic Industries subset extended,MBII,E005,U.S. presidential election (Trump elected),2016-11-08,7.0
+Basic Industries subset extended,MBII,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Basic Industries subset extended,MEOH,E001,September 11 attacks,2001-09-11,169.0
+Basic Industries subset extended,MEOH,E002,Hurricane Katrina,2005-08-29,11.0
+Basic Industries subset extended,MEOH,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,23.0
+Basic Industries subset extended,MEOH,E005,U.S. presidential election (Trump elected),2016-11-08,
+Basic Industries subset extended,MEOH,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,47.0
+Basic Industries subset extended,NEWA,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,17.0
+Basic Industries subset extended,OCC,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,9.0
+Basic Industries subset extended,OCC,E005,U.S. presidential election (Trump elected),2016-11-08,6.0
+Basic Industries subset extended,OCC,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,39.0
+Basic Industries subset extended,OPNT,E005,U.S. presidential election (Trump elected),2016-11-08,6.0
+Basic Industries subset extended,PAAS,E001,September 11 attacks,2001-09-11,46.0
+Basic Industries subset extended,PAAS,E002,Hurricane Katrina,2005-08-29,2.0
+Basic Industries subset extended,PAAS,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Basic Industries subset extended,PAAS,E005,U.S. presidential election (Trump elected),2016-11-08,7.0
+Basic Industries subset extended,PAAS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Basic Industries subset extended,PEIX,E002,Hurricane Katrina,2005-08-29,11.0
+Basic Industries subset extended,PEIX,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,113.0
+Basic Industries subset extended,PEIX,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,14.0
+Basic Industries subset extended,PEIX,E005,U.S. presidential election (Trump elected),2016-11-08,9.0
+Basic Industries subset extended,PEIX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,7.0
+Basic Industries subset extended,REGI,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Basic Industries subset extended,RGLD,E001,September 11 attacks,2001-09-11,87.0
+Basic Industries subset extended,RGLD,E002,Hurricane Katrina,2005-08-29,2.0
+Basic Industries subset extended,RGLD,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,3.0
+Basic Industries subset extended,RGLD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,35.0
+Basic Industries subset extended,RGLD,E005,U.S. presidential election (Trump elected),2016-11-08,154.0
+Basic Industries subset extended,RGLD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Basic Industries subset extended,RKDA,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,289.0
+Basic Industries subset extended,SND,E005,U.S. presidential election (Trump elected),2016-11-08,13.0
+Basic Industries subset extended,SND,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,18.0
+Basic Industries subset extended,SRCL,E001,September 11 attacks,2001-09-11,23.0
+Basic Industries subset extended,SRCL,E002,Hurricane Katrina,2005-08-29,2.0
+Basic Industries subset extended,SRCL,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Basic Industries subset extended,SRCL,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,64.0
+Basic Industries subset extended,SRCL,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Basic Industries subset extended,SRCL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Basic Industries subset extended,SSRM,E001,September 11 attacks,2001-09-11,
+Basic Industries subset extended,SSRM,E002,Hurricane Katrina,2005-08-29,2.0
+Basic Industries subset extended,SSRM,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Basic Industries subset extended,SSRM,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,2.0
+Basic Industries subset extended,SSRM,E005,U.S. presidential election (Trump elected),2016-11-08,87.0
+Basic Industries subset extended,SSRM,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Basic Industries subset extended,STLD,E001,September 11 attacks,2001-09-11,121.0
+Basic Industries subset extended,STLD,E002,Hurricane Katrina,2005-08-29,2.0
+Basic Industries subset extended,STLD,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Basic Industries subset extended,STLD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Basic Industries subset extended,STLD,E005,U.S. presidential election (Trump elected),2016-11-08,
+Basic Industries subset extended,STLD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,17.0
+Basic Industries subset extended,SYNL,E002,Hurricane Katrina,2005-08-29,31.0
+Basic Industries subset extended,SYNL,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,7.0
+Basic Industries subset extended,SYNL,E005,U.S. presidential election (Trump elected),2016-11-08,
+Basic Industries subset extended,SYNL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Basic Industries subset extended,TANH,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Basic Industries subset extended,TANH,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,7.0
+Energy subset extended,AXAS,E002,Hurricane Katrina,2005-08-29,11.0
+Energy subset extended,AXAS,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,3.0
+Energy subset extended,AXAS,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Energy subset extended,AXAS,E005,U.S. presidential election (Trump elected),2016-11-08,127.0
+Energy subset extended,AXAS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,17.0
+Energy subset extended,BKEP,E005,U.S. presidential election (Trump elected),2016-11-08,
+Energy subset extended,BKEP,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Energy subset extended,BKEPP,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Energy subset extended,BKEPP,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Energy subset extended,BLDP,E001,September 11 attacks,2001-09-11,11.0
+Energy subset extended,BLDP,E002,Hurricane Katrina,2005-08-29,99.0
+Energy subset extended,BLDP,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,43.0
+Energy subset extended,BLDP,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,2.0
+Energy subset extended,BLDP,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Energy subset extended,BLDP,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Energy subset extended,CDEV,E005,U.S. presidential election (Trump elected),2016-11-08,15.0
+Energy subset extended,CDEV,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,10.0
+Energy subset extended,CLMT,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Energy subset extended,CLMT,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Energy subset extended,CLMT,E005,U.S. presidential election (Trump elected),2016-11-08,
+Energy subset extended,CLMT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,31.0
+Energy subset extended,FANG,E005,U.S. presidential election (Trump elected),2016-11-08,
+Energy subset extended,FANG,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,20.0
+Energy subset extended,FLMN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Energy subset extended,GPOR,E001,September 11 attacks,2001-09-11,42.0
+Energy subset extended,GPOR,E002,Hurricane Katrina,2005-08-29,
+Energy subset extended,GPOR,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,42.0
+Energy subset extended,GPOR,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Energy subset extended,KLXE,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,20.0
+Energy subset extended,LONE,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,9.0
+Energy subset extended,LONE,E005,U.S. presidential election (Trump elected),2016-11-08,52.0
+Energy subset extended,MCEP,E005,U.S. presidential election (Trump elected),2016-11-08,
+Energy subset extended,MCEP,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Energy subset extended,NESR,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Energy subset extended,PDCE,E001,September 11 attacks,2001-09-11,30.0
+Energy subset extended,PDCE,E002,Hurricane Katrina,2005-08-29,141.0
+Energy subset extended,PDCE,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Energy subset extended,PDCE,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Energy subset extended,PDCE,E005,U.S. presidential election (Trump elected),2016-11-08,140.0
+Energy subset extended,PLUG,E001,September 11 attacks,2001-09-11,14.0
+Energy subset extended,PLUG,E002,Hurricane Katrina,2005-08-29,51.0
+Energy subset extended,PLUG,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,3.0
+Energy subset extended,PLUG,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Energy subset extended,PLUG,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Energy subset extended,PLUG,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,10.0
+Energy subset extended,PTEN,E001,September 11 attacks,2001-09-11,28.0
+Energy subset extended,PTEN,E002,Hurricane Katrina,2005-08-29,21.0
+Energy subset extended,PTEN,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Energy subset extended,PTEN,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Energy subset extended,PTEN,E005,U.S. presidential election (Trump elected),2016-11-08,174.0
+Energy subset extended,PTEN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Energy subset extended,ROSE,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,3.0
+Energy subset extended,ROSE,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Energy subset extended,ROSE,E005,U.S. presidential election (Trump elected),2016-11-08,13.0
+Energy subset extended,SNDE,E005,U.S. presidential election (Trump elected),2016-11-08,14.0
+Energy subset extended,SNDE,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Energy subset extended,TELL,E001,September 11 attacks,2001-09-11,37.0
+Energy subset extended,TELL,E002,Hurricane Katrina,2005-08-29,3.0
+Energy subset extended,TELL,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,27.0
+Energy subset extended,TELL,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Energy subset extended,TELL,E005,U.S. presidential election (Trump elected),2016-11-08,8.0
+Energy subset extended,TELL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,7.0
+Energy subset extended,TPIC,E005,U.S. presidential election (Trump elected),2016-11-08,17.0
+Energy subset extended,TPIC,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Energy subset extended,TRCH,E005,U.S. presidential election (Trump elected),2016-11-08,9.0
+Energy subset extended,TRCH,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,7.0
+Energy subset extended,VNOM,E005,U.S. presidential election (Trump elected),2016-11-08,
+Energy subset extended,VNOM,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,47.0
+Energy subset extended,WPRT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,20.0
+Energy subset extended,WWD,E002,Hurricane Katrina,2005-08-29,8.0
+Energy subset extended,WWD,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Energy subset extended,WWD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Energy subset extended,WWD,E005,U.S. presidential election (Trump elected),2016-11-08,
+Energy subset extended,WWD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,83.0
+Energy subset extended,XOG,E005,U.S. presidential election (Trump elected),2016-11-08,38.0
+Energy subset extended,XOG,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,
+Energy subset extended,ZN,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Energy subset extended,ZN,E005,U.S. presidential election (Trump elected),2016-11-08,122.0
+Energy subset extended,ZN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Finance subset extended,AIHS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,7.0
+Finance subset extended,AMTD,E001,September 11 attacks,2001-09-11,35.0
+Finance subset extended,AMTD,E002,Hurricane Katrina,2005-08-29,3.0
+Finance subset extended,AMTD,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,44.0
+Finance subset extended,AMTD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,AMTD,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,AMTD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Finance subset extended,CME,E002,Hurricane Katrina,2005-08-29,
+Finance subset extended,CME,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,50.0
+Finance subset extended,CME,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,CME,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,CME,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,24.0
+Finance subset extended,DSLV,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Finance subset extended,ETFC,E001,September 11 attacks,2001-09-11,18.0
+Finance subset extended,ETFC,E002,Hurricane Katrina,2005-08-29,46.0
+Finance subset extended,ETFC,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,121.0
+Finance subset extended,ETFC,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,ETFC,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,FITB,E001,September 11 attacks,2001-09-11,8.0
+Finance subset extended,FITB,E002,Hurricane Katrina,2005-08-29,8.0
+Finance subset extended,FITB,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,3.0
+Finance subset extended,FITB,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,FITB,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,27.0
+Finance subset extended,FMCI,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Finance subset extended,GGAL,E002,Hurricane Katrina,2005-08-29,3.0
+Finance subset extended,GGAL,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Finance subset extended,GGAL,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,GGAL,E005,U.S. presidential election (Trump elected),2016-11-08,63.0
+Finance subset extended,GGAL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,69.0
+Finance subset extended,GROW,E001,September 11 attacks,2001-09-11,10.0
+Finance subset extended,GROW,E002,Hurricane Katrina,2005-08-29,2.0
+Finance subset extended,GROW,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Finance subset extended,GROW,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Finance subset extended,GROW,E005,U.S. presidential election (Trump elected),2016-11-08,30.0
+Finance subset extended,GROW,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Finance subset extended,HBAN,E001,September 11 attacks,2001-09-11,8.0
+Finance subset extended,HBAN,E002,Hurricane Katrina,2005-08-29,72.0
+Finance subset extended,HBAN,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,29.0
+Finance subset extended,HBAN,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,HBAN,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,HBAN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,47.0
+Finance subset extended,HX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,7.0
+Finance subset extended,HYAC,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,14.0
+Finance subset extended,LX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Finance subset extended,MHLD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Finance subset extended,MHLD,E005,U.S. presidential election (Trump elected),2016-11-08,142.0
+Finance subset extended,MHLD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Finance subset extended,NAVI,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,NAVI,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,84.0
+Finance subset extended,NGHC,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,NMIH,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,NMIH,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,87.0
+Finance subset extended,PACQ,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,19.0
+Finance subset extended,PBCT,E001,September 11 attacks,2001-09-11,8.0
+Finance subset extended,PBCT,E002,Hurricane Katrina,2005-08-29,39.0
+Finance subset extended,PBCT,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,70.0
+Finance subset extended,PBCT,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,PBCT,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,PBCT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Finance subset extended,PFG,E002,Hurricane Katrina,2005-08-29,3.0
+Finance subset extended,PFG,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,64.0
+Finance subset extended,PFG,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,PFG,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,PFG,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,47.0
+Finance subset extended,QFIN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,5.0
+Finance subset extended,SBT,E002,Hurricane Katrina,2005-08-29,
+Finance subset extended,SBT,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,21.0
+Finance subset extended,SBT,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Finance subset extended,SBT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Finance subset extended,SLM,E001,September 11 attacks,2001-09-11,8.0
+Finance subset extended,SLM,E002,Hurricane Katrina,2005-08-29,2.0
+Finance subset extended,SLM,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,97.0
+Finance subset extended,SLM,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Finance subset extended,SLM,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,SLM,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,47.0
+Finance subset extended,TURN,E001,September 11 attacks,2001-09-11,102.0
+Finance subset extended,TURN,E002,Hurricane Katrina,2005-08-29,25.0
+Finance subset extended,TURN,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,10.0
+Finance subset extended,TURN,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,TURN,E005,U.S. presidential election (Trump elected),2016-11-08,6.0
+Finance subset extended,TVIX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,14.0
+Finance subset extended,USLV,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,24.0
+Finance subset extended,VBTX,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,VBTX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,47.0
+Finance subset extended,ZION,E001,September 11 attacks,2001-09-11,157.0
+Finance subset extended,ZION,E002,Hurricane Katrina,2005-08-29,3.0
+Finance subset extended,ZION,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,17.0
+Finance subset extended,ZION,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Finance subset extended,ZION,E005,U.S. presidential election (Trump elected),2016-11-08,
+Finance subset extended,ZION,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,26.0
+Health Care subset extended,AMGN,E001,September 11 attacks,2001-09-11,74.0
+Health Care subset extended,AMGN,E002,Hurricane Katrina,2005-08-29,4.0
+Health Care subset extended,AMGN,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Health Care subset extended,AMGN,E005,U.S. presidential election (Trump elected),2016-11-08,
+Health Care subset extended,AMGN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,AMRN,E001,September 11 attacks,2001-09-11,18.0
+Health Care subset extended,AMRN,E002,Hurricane Katrina,2005-08-29,37.0
+Health Care subset extended,AMRN,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,62.0
+Health Care subset extended,AMRN,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,10.0
+Health Care subset extended,AMRN,E005,U.S. presidential election (Trump elected),2016-11-08,73.0
+Health Care subset extended,AMRN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Health Care subset extended,AUPH,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Health Care subset extended,AUPH,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Health Care subset extended,BIIB,E001,September 11 attacks,2001-09-11,42.0
+Health Care subset extended,BIIB,E002,Hurricane Katrina,2005-08-29,2.0
+Health Care subset extended,BIIB,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Health Care subset extended,BIIB,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Health Care subset extended,BIIB,E005,U.S. presidential election (Trump elected),2016-11-08,23.0
+Health Care subset extended,BIIB,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,BIOC,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Health Care subset extended,BIOC,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,10.0
+Health Care subset extended,CARA,E005,U.S. presidential election (Trump elected),2016-11-08,37.0
+Health Care subset extended,CARA,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Health Care subset extended,CODX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,ENDP,E001,September 11 attacks,2001-09-11,8.0
+Health Care subset extended,ENDP,E002,Hurricane Katrina,2005-08-29,2.0
+Health Care subset extended,ENDP,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,9.0
+Health Care subset extended,ENDP,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,72.0
+Health Care subset extended,EXAS,E001,September 11 attacks,2001-09-11,99.0
+Health Care subset extended,EXAS,E002,Hurricane Katrina,2005-08-29,133.0
+Health Care subset extended,EXAS,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,13.0
+Health Care subset extended,EXAS,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,29.0
+Health Care subset extended,EXAS,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Health Care subset extended,EXAS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Health Care subset extended,FOLD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,GILD,E001,September 11 attacks,2001-09-11,24.0
+Health Care subset extended,GILD,E002,Hurricane Katrina,2005-08-29,2.0
+Health Care subset extended,GILD,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Health Care subset extended,GILD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,11.0
+Health Care subset extended,GILD,E005,U.S. presidential election (Trump elected),2016-11-08,35.0
+Health Care subset extended,GILD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,GNPX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,HOLX,E001,September 11 attacks,2001-09-11,28.0
+Health Care subset extended,HOLX,E002,Hurricane Katrina,2005-08-29,2.0
+Health Care subset extended,HOLX,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,3.0
+Health Care subset extended,HOLX,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Health Care subset extended,HOLX,E005,U.S. presidential election (Trump elected),2016-11-08,15.0
+Health Care subset extended,HOLX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,27.0
+Health Care subset extended,HZNP,E005,U.S. presidential election (Trump elected),2016-11-08,59.0
+Health Care subset extended,HZNP,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,17.0
+Health Care subset extended,IMMU,E001,September 11 attacks,2001-09-11,23.0
+Health Care subset extended,IMMU,E002,Hurricane Katrina,2005-08-29,2.0
+Health Care subset extended,IMMU,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,22.0
+Health Care subset extended,IMMU,E005,U.S. presidential election (Trump elected),2016-11-08,
+Health Care subset extended,IMMU,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Health Care subset extended,MBRX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,MNKD,E002,Hurricane Katrina,2005-08-29,2.0
+Health Care subset extended,MNKD,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,15.0
+Health Care subset extended,MNKD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Health Care subset extended,MNKD,E005,U.S. presidential election (Trump elected),2016-11-08,129.0
+Health Care subset extended,MNKD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,MRNA,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,
+Health Care subset extended,MYL,E001,September 11 attacks,2001-09-11,21.0
+Health Care subset extended,MYL,E002,Hurricane Katrina,2005-08-29,17.0
+Health Care subset extended,MYL,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,77.0
+Health Care subset extended,MYL,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Health Care subset extended,MYL,E005,U.S. presidential election (Trump elected),2016-11-08,34.0
+Health Care subset extended,MYL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,ONTX,E005,U.S. presidential election (Trump elected),2016-11-08,38.0
+Health Care subset extended,ONTX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,10.0
+Health Care subset extended,ONVO,E005,U.S. presidential election (Trump elected),2016-11-08,122.0
+Health Care subset extended,ONVO,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Health Care subset extended,PDLI,E001,September 11 attacks,2001-09-11,30.0
+Health Care subset extended,PDLI,E002,Hurricane Katrina,2005-08-29,2.0
+Health Care subset extended,PDLI,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,24.0
+Health Care subset extended,PDLI,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Health Care subset extended,RIOT,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Health Care subset extended,RIOT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,SESN,E005,U.S. presidential election (Trump elected),2016-11-08,
+Health Care subset extended,TRVN,E005,U.S. presidential election (Trump elected),2016-11-08,111.0
+Health Care subset extended,TRVN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,20.0
+Health Care subset extended,TTOO,E005,U.S. presidential election (Trump elected),2016-11-08,100.0
+Health Care subset extended,TTOO,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Health Care subset extended,VKTX,E005,U.S. presidential election (Trump elected),2016-11-08,
+Health Care subset extended,VKTX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Health Care subset extended,VRAY,E005,U.S. presidential election (Trump elected),2016-11-08,6.0
+Health Care subset extended,VRAY,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,
+Health Care subset extended,VSTM,E005,U.S. presidential election (Trump elected),2016-11-08,28.0
+Health Care subset extended,VSTM,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Health Care subset extended,WBA,E001,September 11 attacks,2001-09-11,18.0
+Health Care subset extended,WBA,E002,Hurricane Katrina,2005-08-29,70.0
+Health Care subset extended,WBA,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Health Care subset extended,WBA,E005,U.S. presidential election (Trump elected),2016-11-08,
+Health Care subset extended,WBA,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Technology subset extended,AAOI,E005,U.S. presidential election (Trump elected),2016-11-08,63.0
+Technology subset extended,AAOI,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Technology subset extended,AAPL,E001,September 11 attacks,2001-09-11,31.0
+Technology subset extended,AAPL,E002,Hurricane Katrina,2005-08-29,
+Technology subset extended,AAPL,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,71.0
+Technology subset extended,AAPL,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Technology subset extended,AAPL,E005,U.S. presidential election (Trump elected),2016-11-08,13.0
+Technology subset extended,AMAT,E001,September 11 attacks,2001-09-11,64.0
+Technology subset extended,AMAT,E002,Hurricane Katrina,2005-08-29,2.0
+Technology subset extended,AMAT,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,44.0
+Technology subset extended,AMAT,E005,U.S. presidential election (Trump elected),2016-11-08,7.0
+Technology subset extended,AMAT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,26.0
+Technology subset extended,AMD,E001,September 11 attacks,2001-09-11,53.0
+Technology subset extended,AMD,E002,Hurricane Katrina,2005-08-29,3.0
+Technology subset extended,AMD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Technology subset extended,AMD,E005,U.S. presidential election (Trump elected),2016-11-08,8.0
+Technology subset extended,AMD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Technology subset extended,AMRH,E005,U.S. presidential election (Trump elected),2016-11-08,
+Technology subset extended,AMRH,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,17.0
+Technology subset extended,APPN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Technology subset extended,CSCO,E001,September 11 attacks,2001-09-11,25.0
+Technology subset extended,CSCO,E002,Hurricane Katrina,2005-08-29,3.0
+Technology subset extended,CSCO,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,178.0
+Technology subset extended,CSCO,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Technology subset extended,CSCO,E005,U.S. presidential election (Trump elected),2016-11-08,79.0
+Technology subset extended,CSCO,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Technology subset extended,ENPH,E005,U.S. presidential election (Trump elected),2016-11-08,28.0
+Technology subset extended,ENPH,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Technology subset extended,FB,E005,U.S. presidential election (Trump elected),2016-11-08,62.0
+Technology subset extended,FIVN,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Technology subset extended,FIVN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Technology subset extended,FSCT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Technology subset extended,GDS,E005,U.S. presidential election (Trump elected),2016-11-08,14.0
+Technology subset extended,GDS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Technology subset extended,GIGM,E001,September 11 attacks,2001-09-11,30.0
+Technology subset extended,GIGM,E002,Hurricane Katrina,2005-08-29,70.0
+Technology subset extended,GIGM,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Technology subset extended,GIGM,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Technology subset extended,GIGM,E005,U.S. presidential election (Trump elected),2016-11-08,13.0
+Technology subset extended,GIGM,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Technology subset extended,INPX,E005,U.S. presidential election (Trump elected),2016-11-08,6.0
+Technology subset extended,INPX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Technology subset extended,INTC,E001,September 11 attacks,2001-09-11,45.0
+Technology subset extended,INTC,E002,Hurricane Katrina,2005-08-29,10.0
+Technology subset extended,INTC,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,23.0
+Technology subset extended,INTC,E005,U.S. presidential election (Trump elected),2016-11-08,7.0
+Technology subset extended,INTC,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Technology subset extended,IOTS,E005,U.S. presidential election (Trump elected),2016-11-08,58.0
+Technology subset extended,LKCO,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,14.0
+Technology subset extended,MDB,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Technology subset extended,MSFT,E001,September 11 attacks,2001-09-11,25.0
+Technology subset extended,MSFT,E002,Hurricane Katrina,2005-08-29,74.0
+Technology subset extended,MSFT,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Technology subset extended,MSFT,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,11.0
+Technology subset extended,MSFT,E005,U.S. presidential election (Trump elected),2016-11-08,9.0
+Technology subset extended,MSFT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,17.0
+Technology subset extended,MU,E001,September 11 attacks,2001-09-11,86.0
+Technology subset extended,MU,E002,Hurricane Katrina,2005-08-29,
+Technology subset extended,MU,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Technology subset extended,MU,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Technology subset extended,MU,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Technology subset extended,OSPN,E001,September 11 attacks,2001-09-11,88.0
+Technology subset extended,OSPN,E002,Hurricane Katrina,2005-08-29,52.0
+Technology subset extended,OSPN,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,14.0
+Technology subset extended,OSPN,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Technology subset extended,OSPN,E005,U.S. presidential election (Trump elected),2016-11-08,105.0
+Technology subset extended,OSPN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Technology subset extended,PFPT,E005,U.S. presidential election (Trump elected),2016-11-08,59.0
+Technology subset extended,PFPT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,10.0
+Technology subset extended,QCOM,E001,September 11 attacks,2001-09-11,35.0
+Technology subset extended,QCOM,E002,Hurricane Katrina,2005-08-29,3.0
+Technology subset extended,QCOM,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,27.0
+Technology subset extended,QCOM,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Technology subset extended,QCOM,E005,U.S. presidential election (Trump elected),2016-11-08,14.0
+Technology subset extended,QCOM,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,32.0
+Technology subset extended,SFET,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,
+Technology subset extended,SIFY,E001,September 11 attacks,2001-09-11,14.0
+Technology subset extended,SIFY,E002,Hurricane Katrina,2005-08-29,14.0
+Technology subset extended,SIFY,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,7.0
+Technology subset extended,SIFY,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Technology subset extended,SIFY,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,20.0
+Technology subset extended,TEUM,E001,September 11 attacks,2001-09-11,35.0
+Technology subset extended,TEUM,E002,Hurricane Katrina,2005-08-29,85.0
+Technology subset extended,TEUM,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,84.0
+Technology subset extended,TEUM,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Technology subset extended,TEUM,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Technology subset extended,TEUM,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Technology subset extended,TTD,E005,U.S. presidential election (Trump elected),2016-11-08,
+Technology subset extended,TTD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Technology subset extended,VERI,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,6.0
+Technology subset extended,WATT,E005,U.S. presidential election (Trump elected),2016-11-08,14.0
+Technology subset extended,WATT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,20.0
+Technology subset extended,ZNGA,E005,U.S. presidential election (Trump elected),2016-11-08,3.0
+Technology subset extended,ZNGA,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Transportation subset extended,AAL,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,10.0
+Transportation subset extended,AAL,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Transportation subset extended,AAL,E005,U.S. presidential election (Trump elected),2016-11-08,127.0
+Transportation subset extended,AAL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Transportation subset extended,AIRT,E001,September 11 attacks,2001-09-11,46.0
+Transportation subset extended,AIRT,E002,Hurricane Katrina,2005-08-29,2.0
+Transportation subset extended,AIRT,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,17.0
+Transportation subset extended,AIRT,E005,U.S. presidential election (Trump elected),2016-11-08,9.0
+Transportation subset extended,CHRW,E001,September 11 attacks,2001-09-11,18.0
+Transportation subset extended,CHRW,E002,Hurricane Katrina,2005-08-29,2.0
+Transportation subset extended,CHRW,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Transportation subset extended,CHRW,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Transportation subset extended,CHRW,E005,U.S. presidential election (Trump elected),2016-11-08,
+Transportation subset extended,CHRW,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Transportation subset extended,CSX,E001,September 11 attacks,2001-09-11,31.0
+Transportation subset extended,CSX,E002,Hurricane Katrina,2005-08-29,31.0
+Transportation subset extended,CSX,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Transportation subset extended,CSX,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,4.0
+Transportation subset extended,CSX,E005,U.S. presidential election (Trump elected),2016-11-08,
+Transportation subset extended,CSX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Transportation subset extended,CTRM,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Transportation subset extended,CYRX,E002,Hurricane Katrina,2005-08-29,4.0
+Transportation subset extended,CYRX,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,9.0
+Transportation subset extended,CYRX,E005,U.S. presidential election (Trump elected),2016-11-08,142.0
+Transportation subset extended,CYRX,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Transportation subset extended,ESEA,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Transportation subset extended,ESEA,E005,U.S. presidential election (Trump elected),2016-11-08,
+Transportation subset extended,ESEA,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,7.0
+Transportation subset extended,EXPD,E001,September 11 attacks,2001-09-11,87.0
+Transportation subset extended,EXPD,E002,Hurricane Katrina,2005-08-29,16.0
+Transportation subset extended,EXPD,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,20.0
+Transportation subset extended,EXPD,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Transportation subset extended,EXPD,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Transportation subset extended,EXPD,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Transportation subset extended,GLBS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0
+Transportation subset extended,JBHT,E001,September 11 attacks,2001-09-11,98.0
+Transportation subset extended,JBHT,E002,Hurricane Katrina,2005-08-29,2.0
+Transportation subset extended,JBHT,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,3.0
+Transportation subset extended,JBHT,E005,U.S. presidential election (Trump elected),2016-11-08,
+Transportation subset extended,JBHT,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Transportation subset extended,JBLU,E002,Hurricane Katrina,2005-08-29,14.0
+Transportation subset extended,JBLU,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,84.0
+Transportation subset extended,JBLU,E005,U.S. presidential election (Trump elected),2016-11-08,
+Transportation subset extended,JBLU,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,12.0
+Transportation subset extended,ODFL,E001,September 11 attacks,2001-09-11,21.0
+Transportation subset extended,ODFL,E002,Hurricane Katrina,2005-08-29,18.0
+Transportation subset extended,ODFL,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,
+Transportation subset extended,ODFL,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Transportation subset extended,ODFL,E005,U.S. presidential election (Trump elected),2016-11-08,
+Transportation subset extended,ODFL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,11.0
+Transportation subset extended,PANL,E005,U.S. presidential election (Trump elected),2016-11-08,42.0
+Transportation subset extended,PANL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,42.0
+Transportation subset extended,PTSI,E001,September 11 attacks,2001-09-11,88.0
+Transportation subset extended,PTSI,E002,Hurricane Katrina,2005-08-29,25.0
+Transportation subset extended,PTSI,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,29.0
+Transportation subset extended,PTSI,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,13.0
+Transportation subset extended,PXS,E005,U.S. presidential election (Trump elected),2016-11-08,14.0
+Transportation subset extended,PXS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,20.0
+Transportation subset extended,RYAAY,E001,September 11 attacks,2001-09-11,31.0
+Transportation subset extended,RYAAY,E002,Hurricane Katrina,2005-08-29,4.0
+Transportation subset extended,RYAAY,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Transportation subset extended,RYAAY,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,50.0
+Transportation subset extended,RYAAY,E005,U.S. presidential election (Trump elected),2016-11-08,24.0
+Transportation subset extended,SHIP,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,14.0
+Transportation subset extended,SINO,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,86.0
+Transportation subset extended,SINO,E005,U.S. presidential election (Trump elected),2016-11-08,2.0
+Transportation subset extended,SINO,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,14.0
+Transportation subset extended,TOPS,E002,Hurricane Katrina,2005-08-29,43.0
+Transportation subset extended,TOPS,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,9.0
+Transportation subset extended,TOPS,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,3.0
+Transportation subset extended,TOPS,E005,U.S. presidential election (Trump elected),2016-11-08,56.0
+Transportation subset extended,TOPS,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,14.0
+Transportation subset extended,UAL,E004,2008 financial crisis (Lehman Brothers bankruptcy),2008-09-15,35.0
+Transportation subset extended,UAL,E005,U.S. presidential election (Trump elected),2016-11-08,
+Transportation subset extended,UAL,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,84.0
+Transportation subset extended,WERN,E001,September 11 attacks,2001-09-11,43.0
+Transportation subset extended,WERN,E002,Hurricane Katrina,2005-08-29,2.0
+Transportation subset extended,WERN,E003,iPhone announcement (Steve Jobs keynote),2007-01-09,2.0
+Transportation subset extended,WERN,E005,U.S. presidential election (Trump elected),2016-11-08,163.0
+Transportation subset extended,WERN,E006,COVID-19 pandemic (U.S. national emergency declaration),2020-03-13,4.0

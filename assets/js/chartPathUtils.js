@@ -55,3 +55,12 @@ export async function getSectorHeatmapPath(eventId) {
   const ref = `E${padded}_${date}`;
   return `${BASE_PATH}/chapter2/Sector_Evolution_Heatmaps/${ref}_evolution.png`;
 }
+
+export async function getRecoveryChartPath(eventId) {
+  const event = await getEventById(eventId);
+  if (!event) return '';
+  const padded = String(event.id).padStart(3, '0');
+  const date = DATE_OVERRIDES[event.id] || event.start;
+  const ref = `E${padded}_${date}`;
+  return `${BASE_PATH}/chapter3/charts_stock_recovery/${ref}.png`;
+}

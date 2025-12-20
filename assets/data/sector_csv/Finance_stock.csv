@@ -1,0 +1,31 @@
+﻿Sector,Market Category,rank_in_category,Security Name,Symbol,avg_volume,first_date,last_date,Listing Exchange,Industry,marketcap_last
+Finance,G,1,Credit Suisse AG - VelocityShares Daily 2x VIX Short Term ETN,TVIX,2415046.595744681,2010-11-30,2020-04-01,Q,Investment Bankers/Brokers/Service,539039915.82
+Finance,G,2,LexinFintech Holdings Ltd. - American Depositary Shares,LX,864315.0349650349,2017-12-21,2020-04-01,Q,Finance: Consumer Services,666329763.45
+Finance,G,3,NMI Holdings Inc - Common Stock,NMIH,422460.09944064636,2013-11-08,2020-04-01,Q,Property-Casualty Insurers,1615124442.12
+Finance,G,4,"360 Finance, Inc. - American Depositary Shares",QFIN,387539.8773006135,2018-12-14,2020-04-01,Q,Finance: Consumer Services,41168000.0
+Finance,G,5,National General Holdings Corp - Common Stock,NGHC,243381.8831168831,2014-02-20,2020-04-01,Q,Property-Casualty Insurers,2869474675.2
+Finance,G,6,Hexindai Inc. - American Depositary Shares,HX,170845.7095709571,2017-10-26,2020-04-01,Q,Finance: Consumer Services,40366357.45
+Finance,G,7,Credit Suisse AG - VelocityShares 3x Inverse Silver ETN,DSLV,156657.04887218046,2011-10-17,2020-04-01,Q,Investment Bankers/Brokers/Service,25677421.2
+Finance,G,8,"Veritex Holdings, Inc. - Common Stock",VBTX,155358.73821609863,2014-10-09,2020-04-01,Q,Major Banks,1507269775.47
+Finance,G,9,Credit Suisse AG - VelocityShares 3x Long Silver ETN,USLV,145927.86654135337,2011-10-17,2020-04-01,Q,Investment Bankers/Brokers/Service,255952447.95
+Finance,G,10,180 Degree Capital Corp. - Common Stock,TURN,129562.44601491951,2000-01-03,2020-04-01,Q,Finance/Investors Services,60385166.7486
+Finance,Q,1,SLM Corporation - Common Stock,SLM,9379900.471142521,2000-01-03,2020-04-01,Q,Finance: Consumer Services,4975253804.68
+Finance,Q,2,Huntington Bancshares Incorporated - Common Stock,HBAN,8284467.726737338,2000-01-03,2020-04-01,Q,Major Banks,14780353598.24
+Finance,Q,3,Fifth Third Bancorp - Common Stock,FITB,7640238.39811543,2000-01-03,2020-04-01,Q,Major Banks,17788818810.0
+Finance,Q,4,TD Ameritrade Holding Corporation - Common Stock,AMTD,3626659.5013741655,2000-01-03,2020-04-01,Q,Investment Bankers/Brokers/Service,31918304675.2
+Finance,Q,5,Navient Corporation - Common Stock,NAVI,2864737.1333333333,2014-04-17,2020-04-01,Q,Investment Bankers/Brokers/Service,3159130000.0
+Finance,Q,6,CME Group Inc. - Class A Common Stock,CME,2777892.865336086,2002-12-06,2020-04-01,Q,Investment Bankers/Brokers/Service,62360499900.3
+Finance,Q,7,"People's United Financial, Inc. - Common Stock",PBCT,2714405.575186494,2000-01-03,2020-04-01,Q,Savings Institutions,6617839597.82
+Finance,Q,8,E*TRADE Financial Corporation - Common Stock,ETFC,2564448.351001178,2000-01-03,2020-04-01,Q,Savings Institutions,11991990215.1
+Finance,Q,9,Zions Bancorporation N.A. - Common Stock,ZION,2242785.4534746762,2000-01-03,2020-04-01,Q,Major Banks,9512738880.0
+Finance,Q,10,Principal Financial Group Inc - Common Stock,PFG,1854616.264541146,2001-10-23,2020-04-01,Q,Accident &Health Insurance,14355120000.0
+Finance,S,1,"Grupo Financiero Galicia S.A. - American Depositary Shares, Class B Shares underlying",GGAL,436636.07914395316,2000-07-25,2020-04-01,Q,Commercial Banks,2072175514.14
+Finance,S,2,"Maiden Holdings, Ltd. - Common Stock",MHLD,388003.8692461641,2008-05-06,2020-04-01,Q,Property-Casualty Insurers,111143267.58
+Finance,S,3,"Sterling Bancorp, Inc. - Common Stock",SBT,294995.16133333335,2000-05-16,2020-04-01,Q,Savings Institutions,542315655.09
+Finance,S,4,Senmiao Technology Limited - Common Stock,AIHS,232107.9766536965,2018-03-19,2020-04-01,Q,Finance: Consumer Services,87731166.0
+Finance,S,5,VectoIQ Acquisition Corp. - Common Stock,VTIQ,212739.47368421053,2018-06-11,2020-04-01,Q,Business Services,294621600.0
+Finance,S,6,Mr. Cooper Group Inc. - Common Stock,COOP,190718.30357142858,2012-03-28,2020-04-01,Q,Finance: Consumer Services,1340408706.48
+Finance,S,7,Pure Acquisition Corp. - Class A Common Stock,PACQ,187901.0752688172,2018-05-29,2020-04-01,Q,Business Services,515430000.0
+Finance,S,8,"U.S. Global Investors, Inc. - Class A Common Stock",GROW,173572.69336474282,2000-01-03,2020-04-01,Q,Investment Managers,19537863.99
+Finance,S,9,Haymaker Acquisition Corp. II - Class A Common Stock,HYAC,142510.22727272726,2019-07-23,2020-04-01,Q,Business Services,424462500.0
+Finance,S,10,Forum Merger II Corporation - Class A Common Stock,FMCI,101675.44757033249,2018-09-12,2020-04-01,Q,Business Services,252701750.0

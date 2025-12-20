@@ -1,0 +1,28 @@
+﻿Sector,Market Category,rank_in_category,Security Name,Symbol,avg_volume,first_date,last_date,Listing Exchange,Industry,marketcap_last
+Energy,G,1,"Ballard Power Systems, Inc. - Common Shares",BLDP,957536.5528072242,2000-01-03,2020-04-01,Q,Industrial Machinery/Components,834809914.8
+Energy,G,2,Altus Midstream Company - Class A Common Stock,ALTM,631203.7672413794,2018-11-12,2020-04-01,Q,Oil & Gas Production,2641675249.65
+Energy,G,3,"TPI Composites, Inc. - Common Stock",TPIC,328830.8602150538,2016-07-22,2020-04-01,Q,Industrial Machinery/Components,1083987054.9
+Energy,G,4,"Blueknight Energy Partners L.P., L.L.C. - Common Units representing Limited Partner Interests",BKEP,89117.22508591066,2010-12-31,2020-04-01,Q,Natural Gas Distribution,78363861.42
+Energy,G,5,Lonestar Resources US Inc. - Class A Common Stock,LONE,40111.08482595471,2008-07-01,2020-04-01,Q,Oil & Gas Production,127127575.32
+Energy,G,6,"Blueknight Energy Partners L.P., L.L.C. - Series A Preferred Units",BKEPP,23569.650762420068,2012-03-05,2020-04-01,Q,Natural Gas Distribution,165872404.5
+Energy,G,7,Sundance Energy Inc.  - Common Stock,SNDE,7961.581291759466,2016-09-07,2020-04-01,Q,Oil & Gas Production,4961657.65
+Energy,Q,1,"Patterson-UTI Energy, Inc. - Common Stock",PTEN,3630285.846093443,2000-01-03,2020-04-01,Q,Oil & Gas Production,3143799904.08
+Energy,Q,2,"Extraction Oil & Gas, Inc. - Common Stock",XOG,2481942.840778923,2016-10-12,2020-04-01,Q,Oil & Gas Production,667753702.48
+Energy,Q,3,"Diamondback Energy, Inc. - Commmon Stock",FANG,1391064.536741214,2012-10-12,2020-04-01,Q,Oil & Gas Production,17196131894.4
+Energy,Q,4,Gulfport Energy Corporation - Common Stock,GPOR,1251043.7180997252,2000-01-03,2020-04-01,Q,Oil & Gas Production,1388149460.55
+Energy,Q,5,Westport Fuel Systems Inc - Common Shares,WPRT,749593.235394602,2008-08-15,2020-04-01,Q,Industrial Machinery/Components,187449466.44
+Energy,Q,6,"PDC Energy, Inc. - Common Stock",PDCE,530937.8091872792,2000-01-03,2020-04-01,Q,Oil & Gas Production,2517005140.39
+Energy,Q,7,"Woodward, Inc. - Common Stock",WWD,336047.1731448763,2000-01-03,2020-04-01,Q,Industrial Machinery/Components,5920194447.36
+Energy,Q,8,Viper Energy Partners LP - Common Unit,VNOM,335599.86282578873,2014-06-18,2020-04-01,Q,Oil & Gas Production,4467849140.56
+Energy,Q,9,"Calumet Specialty Products Partners, L.P. - Common units representing limited partner interests",CLMT,293020.72829131654,2006-01-26,2020-04-01,Q,Integrated oil Companies,244548410.53
+Energy,Q,10,"KLX Energy Services Holdings, Inc.  - Common Stock",KLXE,291459.0,2018-08-29,2020-04-01,Q,Oilfield Services/Equipment,642467183.93
+Energy,S,1,"Centennial Resource Development, Inc. - Class A Common Stock",CDEV,2911390.6813627253,2016-04-15,2020-04-01,Q,Oil & Gas Production,3563761353.0
+Energy,S,2,"Plug Power, Inc. - Common Stock",PLUG,2607162.1711817826,2000-01-03,2020-04-01,Q,Industrial Machinery/Components,394422498.86
+Energy,S,3,Abraxas Petroleum Corporation - Common Stock,AXAS,819645.6615626226,2000-01-03,2020-04-01,Q,Oil & Gas Production,206590503.8
+Energy,S,4,Rosehill Resources Inc. - Class A Common Stock,ROSE,531464.7133041848,2006-02-13,2020-04-01,Q,Oil & Gas Production,134101007.04
+Energy,S,5,Zion Oil  - Common Stock,ZN,371584.347826087,2007-01-03,2020-04-01,Q,Oil & Gas Production,32210277.4324
+Energy,S,6,Tellurian Inc. - Common Stock,TELL,249067.09854731057,2000-01-03,2020-04-01,Q,Oil & Gas Production,2400301037.48
+Energy,S,7,Falcon Minerals Corporation - Class A Common Stock,FLMN,241146.30541871922,2017-10-30,2020-04-01,Q,Oil & Gas Production,690274200.0
+Energy,S,8,"Mid-Con Energy Partners, LP - Common Units",MCEP,159974.44870565675,2011-12-15,2020-04-01,Q,Oil & Gas Production,29830445.1324
+Energy,S,9,"Torchlight Energy Resources, Inc. - Common Stock",TRCH,155709.51374207187,2010-11-08,2020-04-01,Q,Oil & Gas Production,90444965.04
+Energy,S,10,National Energy Services Reunited Corp. - Ordinary Shares,NESR,126285.67415730337,2017-06-05,2020-04-01,Q,Oilfield Services/Equipment,723005398.05

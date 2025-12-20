@@ -1,0 +1,22 @@
+﻿Sector,Market Category,rank_in_category,Security Name,Symbol,avg_volume,first_date,last_date,Listing Exchange,Industry,marketcap_last
+Transportation,G,1,"Air T, Inc. - Common Stock",AIRT,97002.04161758932,2000-01-03,2020-04-01,Q,Air Freight/Delivery Services,60888420.0
+Transportation,G,2,"P.A.M. Transportation Services, Inc. - Common Stock",PTSI,20536.866902237925,2000-01-03,2020-04-01,Q,Trucking Freight/Courier Services,307981801.2
+Transportation,Q,1,CSX Corporation - Common Stock,CSX,9455802.37534354,2000-01-03,2020-04-01,Q,Railroads,59141357838.66
+Transportation,Q,2,"American Airlines Group, Inc. - Common Stock",AAL,7855648.316452231,2005-09-27,2020-04-01,Q,Air Freight/Delivery Services,16950455492.61
+Transportation,Q,3,"United Airlines Holdings, Inc. - Common Stock",UAL,5824065.478529329,2006-02-06,2020-04-01,Q,Air Freight/Delivery Services,24314724126.88
+Transportation,Q,4,JetBlue Airways Corporation - Common Stock,JBLU,5356117.966850828,2002-04-12,2020-04-01,Q,Air Freight/Delivery Services,5464817157.69
+Transportation,Q,5,"Expeditors International of Washington, Inc. - Common Stock",EXPD,1674820.2002355712,2000-01-03,2020-04-01,Q,Oil Refining/Marketing,12947707501.52
+Transportation,Q,6,"C.H. Robinson Worldwide, Inc. - Common Stock",CHRW,1363245.465253239,2000-01-03,2020-04-01,Q,Oil Refining/Marketing,12643528936.35
+Transportation,Q,7,"J.B. Hunt Transport Services, Inc. - Common Stock",JBHT,1354114.1539065568,2000-01-03,2020-04-01,Q,Trucking Freight/Courier Services,12372398910.0
+Transportation,Q,8,"Old Dominion Freight Line, Inc. - Common Stock",ODFL,961164.330585002,2000-01-03,2020-04-01,Q,Trucking Freight/Courier Services,12224099181.85
+Transportation,Q,9,"Werner Enterprises, Inc. - Common Stock",WERN,723745.406360424,2000-01-03,2020-04-01,Q,Trucking Freight/Courier Services,2456311598.51
+Transportation,Q,10,"Ryanair Holdings plc - American Depositary Shares, each representing five Ordinary Shares",RYAAY,592725.0883392226,2000-01-03,2020-04-01,Q,Air Freight/Delivery Services,7426826733.82
+Transportation,S,1,Castor Maritime Inc. - Common Shares,CTRM,385819.7916666667,2019-02-11,2020-04-01,Q,Marine Transportation,0.0
+Transportation,S,2,TOP Ships Inc. - Common Stock,TOPS,337822.6869455006,2004-08-02,2020-04-01,Q,Marine Transportation,20402783.625
+Transportation,S,3,Pyxis Tankers Inc. - Common Stock,PXS,188803.33633904418,2015-11-04,2020-04-01,Q,Marine Transportation,22548124.44
+Transportation,S,4,"Sino-Global Shipping America, Ltd. - Common Stock",SINO,152101.10478741213,2008-05-21,2020-04-01,Q,Oil Refining/Marketing,12177254.895
+Transportation,S,5,Seanergy Maritime Holdings Corp - Common Stock,SHIP,72340.78303425775,2008-01-30,2020-04-01,Q,Marine Transportation,19803250.938
+Transportation,S,6,"CryoPort, Inc. - Common Stock",CYRX,67662.01740076128,2005-08-22,2020-04-01,Q,Oil Refining/Marketing,350779696.4
+Transportation,S,7,Globus Maritime Limited - Common Stock,GLBS,64935.857754362856,2008-03-11,2020-04-01,Q,Marine Transportation,110214.16
+Transportation,S,8,Pangaea Logistics Solutions Ltd. - Common Stock,PANL,19591.777356103732,2013-12-19,2020-04-01,Q,Marine Transportation,151526981.04
+Transportation,S,9,Euroseas Ltd. - Common Stock,ESEA,11455.327049414453,2006-05-05,2020-04-01,Q,Marine Transportation,7891888.2

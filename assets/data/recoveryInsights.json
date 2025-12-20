@@ -1,0 +1,32 @@
+[
+  {
+    "eventId": 1,
+    "title": "9/11 — Recovery Time",
+    "insight": "The recovery after 9/11 is slow and highly uneven across sectors. Basic Industries and Transportation exhibit long and dispersed recovery times, reflecting persistent uncertainty tied to global trade and mobility. Finance shows a wide distribution, with some firms rebounding quickly while others remain impaired for months. In contrast, Energy and Health Care recover faster on average, suggesting a quicker re-anchoring of expectations. Fear fades here not abruptly, but gradually."
+  },
+  {
+    "eventId": 2,
+    "title": "Hurricane Katrina — Recovery Time",
+    "insight": "Recovery times following Katrina are shorter overall, but strongly sector-dependent. Energy stands out with a wide dispersion and long tail, reflecting prolonged disruptions in production and infrastructure. Technology and Transportation recover relatively quickly, indicating limited systemic impact beyond the affected regions. The market absorbs this shock asymmetrically: recovery is fast where exposure is indirect, slower where physical constraints persist."
+  },
+  {
+    "eventId": 3,
+    "title": "iPhone Announcement — Recovery Time",
+    "insight": "Despite being a positive innovation shock, recovery times are not uniformly short. Finance and Technology display longer and more dispersed recovery distributions, suggesting delayed reallocation rather than immediate consensus. Health Care and Transportation recover faster, remaining largely insulated from the innovation wave. This event spreads slowly, not as fear, but as gradual anticipation."
+  },
+  {
+    "eventId": 4,
+    "title": "2008 Crisis — Recovery Time",
+    "insight": "The 2008 crisis produces the most compressed recovery times for some sectors — not because recovery is fast, but because many stocks fail to recover within the window. Finance and Energy show very short apparent recovery times for surviving stocks, while Transportation exhibits long and highly variable delays. The distribution reflects a systemic shock: contagion is fast, recovery is selective, and scars remain."
+  },
+  {
+    "eventId": 5,
+    "title": "Trump Election — Recovery Time",
+    "insight": "Recovery after the 2016 election is heterogeneous but generally faster than during crisis-driven events. Energy and Transportation show long tails, reflecting uncertainty around policy implementation. Technology and Health Care recover more rapidly, possibly due to clearer expectations. Here, recovery speed reflects narrative resolution rather than economic repair."
+  },
+  {
+    "eventId": 6,
+    "title": "COVID-19 — Recovery Time",
+    "insight": "COVID-19 displays some of the shortest median recovery times across sectors, despite the severity of the initial drop. Health Care and Technology recover particularly quickly, while Energy lags behind with longer and more dispersed times. Compared to earlier crises, recovery is sharper and more synchronized. The shock spreads rapidly — but so does the rebound."
+  }
+]

@@ -1,0 +1,30 @@
+﻿Sector,Market Category,rank_in_category,Security Name,Symbol,avg_volume,first_date,last_date,Listing Exchange,Industry,marketcap_last
+Basic Industries,G,1,"Aemetis, Inc - Common Stock",AMTX,132925.92842673868,2014-05-15,2020-04-01,Q,Major Chemicals,18333273.2807
+Basic Industries,G,2,"Calyxt, Inc. - Common Stock",CLXT,94722.74052478134,2017-07-05,2020-04-01,Q,Agricultural Chemicals,442658358.81
+Basic Industries,G,3,"Advanced Emissions Solutions, Inc. - Common Stock",ADES,91152.15939556422,2003-10-24,2020-04-01,Q,Major Chemicals,235502336.575
+Basic Industries,G,4,Green Plains Partners LP - Common Units,GPP,64005.666666666664,2015-06-26,2020-04-01,Q,Major Chemicals,483185942.58
+Basic Industries,G,5,"Loop Industries, Inc. - Common Stock",LOOP,53852.6936026936,2017-11-20,2020-04-01,Q,Major Chemicals,398907330.8
+Basic Industries,G,6,Synalloy Corporation - Common Stock,SYNL,21399.60738123282,2000-01-03,2020-04-01,Q,Steel/Iron Ore,123572862.84
+Basic Industries,G,7,Optical Cable Corporation - Common Stock,OCC,18359.93325480958,2000-01-03,2020-04-01,Q,Telecommunications Equipment,41317784.19
+Basic Industries,G,8,Evogene Ltd. - Ordinary Shares,EVGN,8045.779084418312,2010-10-15,2020-04-01,Q,Agricultural Chemicals,61295226.86
+Basic Industries,G,9,"Asia Pacific Wire & Cable Corporation Limited - Common shares, Par value .01 per share",APWC,6706.509859824187,2003-07-15,2020-04-01,Q,Telecommunications Equipment,32661405.7146
+Basic Industries,Q,1,"Steel Dynamics, Inc. - Common Stock",STLD,3404505.26109148,2000-01-03,2020-04-01,Q,Steel/Iron Ore,8553115940.76
+Basic Industries,Q,2,Pan American Silver Corp. - Common Stock,PAAS,1479337.3773066353,2000-01-03,2020-04-01,Q,Precious Metals,2314001208.48
+Basic Industries,Q,3,Century Aluminum Company - Common Stock,CENX,1437475.6380054967,2000-01-03,2020-04-01,Q,Aluminum,766781723.75
+Basic Industries,Q,4,SSR Mining Inc. - Common Stock,SSRM,1015194.2481350609,2000-01-03,2020-04-01,Q,Precious Metals,1700035560.96
+Basic Industries,Q,5,"Stericycle, Inc. - Common Stock",SRCL,725494.9548488418,2000-01-03,2020-04-01,Q,Environmental Services,4094887446.0
+Basic Industries,Q,6,"Smart Sand, Inc. - Common Stock",SND,571466.4982537834,2016-11-01,2020-04-01,Q,Mining & Quarrying of Nonmetallic Minerals (No Fuels),126059565.51
+Basic Industries,Q,7,"Royal Gold, Inc. - Common Stock",RGLD,570671.6725559481,2000-01-03,2020-04-01,Q,Precious Metals,5850662742.0
+Basic Industries,Q,8,Methanex Corporation - Common Stock,MEOH,514067.8837848449,2000-01-03,2020-04-01,Q,Major Chemicals,4406324459.19
+Basic Industries,Q,9,"Renewable Energy Group, Inc. - Common Stock",REGI,504471.4147286822,2012-01-19,2020-04-01,Q,Major Chemicals,985085182.64
+Basic Industries,Q,10,"Green Plains, Inc. - Common Stock",GPRE,487076.56205824146,2006-03-15,2020-04-01,Q,Major Chemicals,635296834.64
+Basic Industries,S,1,"Aqua Metals, Inc. - Common Stock",AQMS,408700.51020408166,2015-07-31,2020-04-01,Q,Metal Fabrications,109458991.07
+Basic Industries,S,2,"Pacific Ethanol, Inc. - Common Stock",PEIX,389165.1242728715,2005-03-24,2020-04-01,Q,Major Chemicals,52574700.65
+Basic Industries,S,3,Tantech Holdings Ltd. - Common Stock,TANH,253783.25434439178,2015-03-24,2020-04-01,Q,Major Chemicals,48221446.56
+Basic Industries,S,4,"Arcadia Biosciences, Inc. - Common Stock",RKDA,150335.25121241514,2015-05-15,2020-04-01,Q,Agricultural Chemicals,24829578.8
+Basic Industries,S,5,"Select Interior Concepts, Inc. - Class A Common Stock",SIC,141948.4107579462,2018-08-16,2020-04-01,Q,Homebuilding,289901759.9
+Basic Industries,S,6,"Marrone Bio Innovations, Inc. - Common Stock",MBII,139366.98450536354,2013-08-02,2020-04-01,Q,Agricultural Chemicals,175997945.88
+Basic Industries,S,7,"Gevo, Inc. - Common Stock",GEVO,124443.89395914819,2011-02-09,2020-04-01,Q,Major Chemicals,20737039.2
+Basic Industries,S,8,"Concrete Pumping Holdings, Inc.  - Common Stock",BBCP,108732.82674772036,2017-08-21,2020-04-01,Q,Engineering & Construction,221838866.83
+Basic Industries,S,9,"Newater Technology, Inc. - Ordinary Shares",NEWA,97578.4342688331,2017-07-10,2020-04-01,Q,Miscellaneous,68853330.0
+Basic Industries,S,10,"Opiant Pharmaceuticals, Inc. - Common Stock",OPNT,85091.73076923077,2009-12-02,2020-04-01,Q,Precious Metals,60624109.02

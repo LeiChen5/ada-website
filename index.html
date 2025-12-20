@@ -533,11 +533,30 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       </div>
     </div>
 
+    <div class="fear-copy">
+      <p>
+        By placing sectors side by side, rather than observing them in isolation, clear patterns begin to emerge. While Chapter 1 revealed how fear enters the system, this chapter shows how that fear reorganizes the market.
+      </p>
+      <p>
+        Across events, sectoral reactions are not random. Different types of crises consistently reshape relative performance, favoring certain industries while penalizing others. Defensive and structurally essential sectors tend to absorb stress during geopolitical and health-related crises, while cyclical and energy-dependent industries are more exposed. Political and innovation-driven events, in contrast, redistribute performance without triggering systemic fear.
+      </p>
+      <p>
+        Crucially, these patterns only become visible through comparison. When examined independently, sectoral reactions appear noisy and idiosyncratic. When viewed together, they reveal structure.
+      </p>
+      <p>
+        This chapter therefore answers the research question clearly but cautiously: crises do not produce random sectoral outcomes. They act as selective pressures that reorder the market, not through deterministic rules, but through recurring tendencies.
+      </p>
+      <p>
+        With these relative patterns established, the next chapter shifts focus once again — from who performs better or worse to how quickly the market recovers.
+      </p>
+    </div>
+
   </div>
   <script type="module">
     import { getAllEvents } from './assets/js/eventUtils.js';
-    import { getSectorHeatmapPath } from './assets/js/chartPathUtils.js';
+    import { getSectorHeatmapPath, getRecoveryChartPath } from './assets/js/chartPathUtils.js';
     import { getHeatmapInsight } from './assets/js/heatmapInsightUtils.js';
+    import { getRecoveryInsight } from './assets/js/recoveryInsightUtils.js';
 
     const CORAL2 = '#f9624f';
     const heatmapEventChips = document.getElementById('heatmap-event-chips');
@@ -547,9 +566,20 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     const heatmapMissing = document.querySelector('[data-for="heatmap-img"]');
     const heatmapInsightBody = document.getElementById('heatmap-insight-body');
 
+    const recoveryEventChips = document.getElementById('recovery-event-chips');
+    const recoveryStatusEl = document.getElementById('recovery-selection-status');
+    const recoveryUpdateHint = document.getElementById('recovery-update-hint');
+    const recoveryImg = document.getElementById('recovery-img');
+    const recoveryMissing = document.querySelector('[data-for="recovery-img"]');
+    const recoveryInsightBody = document.getElementById('recovery-insight-body');
+
     let heatmapEvents = [];
     let selectedHeatmapEventId = null;
     let heatmapHintTimer = null;
+
+    let recoveryEvents = [];
+    let selectedRecoveryEventId = null;
+    let recoveryHintTimer = null;
 
     function setChipVisual(chip, active) {
       chip.classList.toggle('active', active);
@@ -630,31 +660,210 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     })().catch(error => {
       console.error('Failed to initialize heatmap section', error);
     });
+
+    function renderRecoveryEventChips() {
+      recoveryEventChips.innerHTML = '';
+      recoveryEvents.forEach(event => {
+        const chip = document.createElement('button');
+        chip.className = 'chip';
+        chip.style.setProperty('--chip-color', CORAL2);
+        chip.textContent = event.name;
+        setChipVisual(chip, event.id === selectedRecoveryEventId);
+        chip.addEventListener('click', () => {
+          if (selectedRecoveryEventId === event.id) return;
+          selectedRecoveryEventId = event.id;
+          renderRecoveryEventChips();
+          updateRecovery();
+        });
+        recoveryEventChips.appendChild(chip);
+      });
+    }
+
+    function showRecoveryHint() {
+      recoveryUpdateHint.classList.add('show');
+      if (recoveryHintTimer) clearTimeout(recoveryHintTimer);
+      recoveryHintTimer = setTimeout(() => recoveryUpdateHint.classList.remove('show'), 900);
+    }
+
+    function updateRecoveryStatus() {
+      const event = recoveryEvents.find(item => item.id === selectedRecoveryEventId);
+      recoveryStatusEl.textContent = event ? `Selected: ${event.name}` : 'Selected: —';
+    }
+
+    function setRecoveryImage(src, alt) {
+      if (!recoveryImg || !recoveryMissing) return;
+      if (!src) {
+        recoveryImg.removeAttribute('src');
+        recoveryMissing.classList.add('visible');
+        return;
+      }
+      recoveryMissing.classList.remove('visible');
+      recoveryImg.onload = () => recoveryMissing.classList.remove('visible');
+      recoveryImg.onerror = () => {
+        recoveryMissing.classList.add('visible');
+        recoveryImg.removeAttribute('src');
+      };
+      recoveryImg.src = src;
+      recoveryImg.alt = alt;
+    }
+
+    async function updateRecovery() {
+      const path = await getRecoveryChartPath(selectedRecoveryEventId);
+      const event = recoveryEvents.find(item => item.id === selectedRecoveryEventId);
+      const descriptor = event ? `Recovery — ${event.name}` : 'Recovery';
+      updateRecoveryStatus();
+      setRecoveryImage(path, descriptor);
+      await updateRecoveryInsight(event);
+      showRecoveryHint();
+    }
+
+    async function updateRecoveryInsight(event) {
+      if (!recoveryInsightBody) return;
+      if (!event) {
+        recoveryInsightBody.textContent = 'Select an event above to see the recovery chart and interpretation.';
+        return;
+      }
+      const insight = await getRecoveryInsight(event.id);
+      recoveryInsightBody.textContent = insight?.insight || `No interpretation has been written for ${event.name}.`;
+    }
+
+    (async function initRecovery() {
+      recoveryEvents = await getAllEvents();
+      if (!recoveryEvents.length) return;
+      selectedRecoveryEventId = recoveryEvents[0].id;
+      renderRecoveryEventChips();
+      await updateRecovery();
+    })().catch(error => {
+      console.error('Failed to initialize recovery section', error);
+    });
   </script>
   <div class="chapter-section" id="contagion">
     <h3>The Speed of Contagion</h3>
+    <p><strong>When does the system begin to heal?</strong></p>
     <p>
-      Crises rarely stay confined to one market or sector. In this chapter, we study
-      how shocks propagate across assets, regions, and industries.
+      In the previous chapters, we observed how stress enters the market and how it redistributes across sectors. We saw fear appear, intensify, and concentrate. But fear alone does not define the severity of a shock. What matters just as much is how long it stays in the system.
     </p>
     <p>
-      By measuring reaction delays and cross-sector correlations, we capture the
-      velocity at which fear and optimism spread through the financial system.
+      Some disturbances provoke sharp reactions followed by quick stabilization. Others leave the market weakened, slow to recover, unable to return to its previous state. The difference lies not in the initial impact, but in the pace of recovery.
     </p>
-    <div class="viz-placeholder">[ Sector Heatmap Placeholder ]</div>
+    <p>
+      This chapter focuses on time. We observe how long it takes for different parts of the market to regain their pre-event state after a shock. Recovery time acts as a vital sign: it captures the system’s ability to absorb stress and restore balance.
+    </p>
+    <p>
+      The boxplots below show the distribution of recovery times across sectors for each event. Each point represents an individual stock. Each box reflects how quickly an entire sector regains stability. Together, they reveal whether a shock fades like a passing fever — or lingers like a chronic condition.
+    </p>
+    <div class="fear-sticky heatmap-sticky">
+      <div class="fear-sticky-inner">
+        <div class="fear-sticky-left">
+          <div class="fear-sticky-title">Recovery Time</div>
+          <div class="chip-row">
+            <span class="chip-row-label">Event</span>
+            <div class="chip-row-items" id="recovery-event-chips"></div>
+          </div>
+        </div>
+        <div class="fear-sticky-right">
+          <div class="status-row">
+            <div class="selection-status" id="recovery-selection-status">Selected: —</div>
+            <div class="update-hint" id="recovery-update-hint">Updated</div>
+          </div>
+          <p class="insight-body" id="recovery-insight-body">
+            Select an event above to see the recovery chart and interpretation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card chart-card-full">
+      <div class="chart-card-header">
+        <div class="chart-title">Recovery Time by Event</div>
+        <div class="chart-subtitle">Distribution of days to regain pre-shock levels</div>
+      </div>
+      <div class="chart-body">
+        <img id="recovery-img" alt="Recovery time chart" loading="lazy">
+        <div class="chart-missing" data-for="recovery-img">Image not available</div>
+      </div>
+    </div>
+
+    <div class="fear-copy">
+      <p>
+        From shock to recovery
+      </p>
+      <p>
+        Across events, one pattern becomes clear: shocks do not leave the system at the same speed they enter it. Some propagate rapidly but dissipate just as fast. Others spread more slowly, embedding themselves deep into market dynamics.
+      </p>
+      <p>
+        Localized events tend to produce uneven but relatively quick recoveries, affecting specific sectors while leaving others largely intact. Systemic crises, by contrast, alter the market’s internal equilibrium. In those cases, recovery is not only slower — it is fragmented. Some sectors heal early, others remain impaired long after the initial shock.
+      </p>
+      <p>
+        More recent crises show a different rhythm. Despite their intensity, recovery often occurs faster and more synchronously across sectors. Information circulates more rapidly, expectations adjust sooner, and capital repositions with greater speed. The system reacts faster — but it also stabilizes faster.
+      </p>
+      <p>
+        Recovery time therefore tells us something fundamental. It reveals not just how hard the market was hit, but how deeply the shock disrupted its internal functioning.
+      </p>
+      <p>
+        Having traced how stress fades and balance returns, one final question remains: is resilience purely reactive — or can it be anticipated before the shock even occurs? That question leads us to the final chapter.
+      </p>
+    </div>
 
   </div>
   <div class="chapter-section" id="resilience">
     <h3>Predicting Resilience</h3>
+    <p><strong>Can resilience be diagnosed?</strong></p>
     <p>
-      Some assets recover faster than others. In this chapter, we investigate which
-      pre-crisis signals can help predict post-crisis resilience.
+      Markets do not only react to shocks. They recover and in doing so, reveal their structure.
     </p>
-    <p>
-      We explore whether early indicators — such as trading behavior or sentiment shifts —
-      provide clues about an asset’s ability to rebound.
-    </p>
-    <div class="viz-placeholder">[ Sector Heatmap Placeholder ]</div>
+
+    <div class="chart-card chart-card-full">
+      <div class="chart-card-header">
+        <div class="chart-title">Recovery Snapshot</div>
+        <div class="chart-subtitle">CAR at +60 days across events and sectors</div>
+      </div>
+      <div class="chart-body">
+        <img src="assets/img/plots/chapter2/global_heatmap_car.png" alt="Global heatmap of CAR at +60 days" loading="lazy">
+        <div class="chart-missing" data-for="global-heatmap-car">Image not available</div>
+      </div>
+    </div>
+
+    <div class="fear-copy">
+      <p>
+        The heatmap below captures sector performance sixty days after each event, measured through cumulative abnormal returns relative to the benchmark. By freezing the market at a common recovery horizon, this visualization allows direct comparison across sectors and crisis types.
+      </p>
+      <p>
+        Several tendencies emerge clearly. Health Care displays a consistently positive recovery profile, largely independent of the event. Finance rebounds strongly after political and systemic disruptions, yet falters during health-driven crises. Energy reacts sharply to context, recovering after geopolitical shocks but suffering persistent losses after COVID-19. Technology benefits from innovation and political clarity, while remaining fragile under uncertainty. Basic Industries and Transportation show recovery patterns that depend heavily on the nature of the disruption.
+      </p>
+      <p>
+        Rather than revealing universal winners, this snapshot highlights conditional resilience — strength that depends on context.
+      </p>
+    </div>
+
+    <div class="chart-card chart-card-full">
+      <div class="chart-card-header">
+        <div class="chart-title">What Drives Recovery?</div>
+        <div class="chart-subtitle">Model-based view of factors linked to resilience</div>
+      </div>
+      <div class="chart-body">
+        <img src="assets/img/plots/chapter2/forest_plot_car.png" alt="Forest plot of factors influencing recovery" loading="lazy">
+        <div class="chart-missing" data-for="forest-plot-car">Image not available</div>
+      </div>
+    </div>
+
+    <div class="fear-copy">
+      <p>
+        Patterns alone do not explain resilience. To move beyond visual comparison, we introduce a model-based perspective designed to isolate which characteristics are systematically associated with faster recovery.
+      </p>
+      <p>
+        The forest plot summarizes the estimated influence of structural factors such as sector affiliation and firm characteristics on recovery outcomes. Each coefficient reflects how strongly a given factor shifts the probability or speed of recovery, holding others constant. Some effects emerge as stable and directional, while others remain weak or inconclusive.
+      </p>
+      <p>
+        This approach does not promise prediction in the strict sense. Instead, it offers a diagnostic lens identifying which features consistently matter when the system attempts to restore equilibrium.
+      </p>
+    </div>
+
+    <div class="fear-copy">
+      <p>
+        Resilience is not random. It emerges from the interaction between the shock and the structure of the market. Markets do not anticipate trauma — but in recovery, they reveal their architecture.
+      </p>
+    </div>
 
   </div>
   <div class="chapter-section">

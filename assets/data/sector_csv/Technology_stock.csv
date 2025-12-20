@@ -1,0 +1,31 @@
+﻿Sector,Market Category,rank_in_category,Security Name,Symbol,avg_volume,first_date,last_date,Listing Exchange,Industry,marketcap_last
+Technology,G,1,"Enphase Energy, Inc. - Common Stock",ENPH,1442117.2790466733,2012-03-30,2020-04-01,Q,Semiconductors,803840488.92
+Technology,G,2,"The Trade Desk, Inc. - Class A Common Stock",TTD,1227687.7252252253,2016-09-21,2020-04-01,Q,"Computer Software: Programming, Data Processing",6992250804.0
+Technology,G,3,"MongoDB, Inc. - Class A Common Stock",MDB,1136695.7792207792,2017-10-19,2020-04-01,Q,Computer Software: Prepackaged Software,5361427271.04
+Technology,G,4,"Applied Optoelectronics, Inc. - Common Stock",AAOI,875000.487804878,2013-09-26,2020-04-01,Q,Semiconductors,295594038.59
+Technology,G,5,GDS Holdings Limited - American Depositary Shares,GDS,834383.3527357392,2016-11-01,2020-04-01,Q,"Computer Software: Programming, Data Processing",1487817755.9
+Technology,G,6,"ForeScout Technologies, Inc. - Common Stock",FSCT,675156.8772504092,2017-10-26,2020-04-01,Q,Computer peripheral equipment,1667340358.0
+Technology,G,7,Appian Corporation - Class A Common Stock,APPN,559114.2061281337,2017-05-25,2020-04-01,Q,Computer Software: Prepackaged Software,2436687907.09
+Technology,G,8,"Proofpoint, Inc. - Common Stock",PFPT,551441.9,2012-04-20,2020-04-01,Q,EDP Services,6659241750.0
+Technology,G,9,"Five9, Inc. - Common Stock",FIVN,490933.99602385686,2014-04-04,2020-04-01,Q,EDP Services,3191904930.36
+Technology,G,10,"Veritone, Inc. - Common Stock",VERI,431993.3975240715,2017-05-12,2020-04-01,Q,EDP Services,99347348.92
+Technology,Q,1,Apple Inc. - Common Stock,AAPL,114130484.55045152,2000-01-03,2020-04-01,Q,Computer Manufacturing,805982810400.0
+Technology,Q,2,Microsoft Corporation - Common Stock,MSFT,55262327.424420886,2000-01-03,2020-04-01,Q,Computer Software: Prepackaged Software,829903328453.82
+Technology,Q,3,Intel Corporation - Common Stock,INTC,49032295.053003535,2000-01-03,2020-04-01,Q,Semiconductors,231145800000.0
+Technology,Q,4,"Cisco Systems, Inc. - Common Stock",CSCO,47495780.17275226,2000-01-03,2020-04-01,Q,Computer Communications Equipment,223224499894.5
+Technology,Q,5,"Facebook, Inc. - Class A Common Stock",FB,33019994.94949495,2012-05-18,2020-04-01,Q,"Computer Software: Programming, Data Processing",463174004642.0
+Technology,Q,6,"Advanced Micro Devices, Inc. - Common Stock",AMD,26893546.800157048,2000-01-03,2020-04-01,Q,Semiconductors,24076908223.9
+Technology,Q,7,"Micron Technology, Inc. - Common Stock",MU,22726461.15037299,2000-01-03,2020-04-01,Q,Semiconductors,47039124105.64
+Technology,Q,8,"Applied Materials, Inc. - Common Stock",AMAT,21463998.645465255,2000-01-03,2020-04-01,Q,Semiconductors,37486557895.5
+Technology,Q,9,QUALCOMM Incorporated - Common Stock,QCOM,18025175.795053005,2000-01-03,2020-04-01,Q,Radio And Television Broadcasting And Communications Equipment,62947999092.93
+Technology,Q,10,Zynga Inc. - Class A Common Stock,ZNGA,16766459.088729016,2011-12-16,2020-04-01,Q,EDP Services,4720950456.0
+Technology,S,1,Energous Corporation - Common Stock,WATT,675863.5402906209,2014-03-28,2020-04-01,Q,Radio And Television Broadcasting And Communications Equipment,260946000.0
+Technology,S,2,Pareteum Corporation - Common Stock,TEUM,444123.59638790734,2000-01-03,2020-04-01,Q,EDP Services,356184596.04
+Technology,S,3,GigaMedia Limited - Ordinary Shares,GIGM,434729.2827504446,2000-02-18,2020-04-01,Q,"Computer Software: Programming, Data Processing",31443608.575
+Technology,S,4,"Ameri Holdings, Inc. - Common Stock",AMRH,345588.6914378029,2015-05-04,2020-04-01,Q,Semiconductors,11997132.6501
+Technology,S,5,Inpixon  - Common Stock,INPX,341367.41048261547,2012-08-03,2020-04-01,Q,EDP Services,7183773.81
+Technology,S,6,OneSpan Inc. - Common Stock,OSPN,336341.8924224578,2000-01-03,2020-04-01,Q,EDP Services,675099492.6
+Technology,S,7,"Sify Technologies Limited - American Depository Shares, each represented by one Equity Share",SIFY,281426.8551236749,2000-01-03,2020-04-01,Q,"Computer Software: Programming, Data Processing",40486583.0865
+Technology,S,8,Luokung Technology Corp - Ordinary Shares,LKCO,263089.54248366016,2019-01-15,2020-04-01,Q,EDP Services,12082859.5
+Technology,S,9,Adesto Technologies Corporation - Common Stock,IOTS,246451.21076233184,2015-10-27,2020-04-01,Q,Semiconductors,165419878.04
+Technology,S,10,Safe-T Group Ltd. - American Depositary Shares,SFET,239659.3137254902,2018-08-17,2020-04-01,Q,Computer Software: Prepackaged Software,1585377.5

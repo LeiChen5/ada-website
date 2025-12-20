@@ -1,0 +1,31 @@
+﻿Sector,Market Category,rank_in_category,Security Name,Symbol,avg_volume,first_date,last_date,Listing Exchange,Industry,marketcap_last
+Health Care,G,1,"Amarin Corporation plc - American Depositary Shares, each representing one Ordinary Share",AMRN,2037473.9890066746,2000-01-03,2020-04-01,Q,Major Pharmaceuticals,5222800923.94
+Health Care,G,2,"Amicus Therapeutics, Inc. - Common Stock",FOLD,1364490.3804515928,2007-05-31,2020-04-01,Q,Major Pharmaceuticals,2525249262.29
+Health Care,G,3,Aurinia Pharmaceuticals Inc - Common Shares,AUPH,1243837.2953736654,2014-09-03,2020-04-01,Q,Major Pharmaceuticals,530101413.6
+Health Care,G,4,"Sesen Bio, Inc. - Common Stock",SESN,1182386.378308586,2014-02-06,2020-04-01,Q,Major Pharmaceuticals,65070936.818
+Health Care,G,5,MannKind Corporation - Common Stock,MNKD,1113696.8085106383,2004-07-28,2020-04-01,Q,Major Pharmaceuticals,237800383.77
+Health Care,G,6,"Immunomedics, Inc. - Common Stock",IMMU,968127.0710639969,2000-01-03,2020-04-01,Q,Biotechnology: In Vitro & In Vivo Diagnostic Substances,2725021002.33
+Health Care,G,7,"ViewRay, Inc. - Common Stock",VRAY,932321.6239316239,2015-08-10,2020-04-01,Q,Biotechnology: Electromedical & Electrotherapeutic Apparatus,785945056.94
+Health Care,G,8,"Verastem, Inc. - Common Stock",VSTM,838039.990281827,2012-01-27,2020-04-01,Q,Major Pharmaceuticals,243511435.2
+Health Care,G,9,"Cara Therapeutics, Inc. - Common Stock",CARA,786183.3869929169,2014-01-31,2020-04-01,Q,Major Pharmaceuticals,666650193.3
+Health Care,G,10,"T2 Biosystems, Inc. - Common Stock",TTOO,774080.1124385102,2014-08-07,2020-04-01,Q,Medical/Dental Instruments,164704939.96
+Health Care,Q,1,"Gilead Sciences, Inc. - Common Stock",GILD,17674674.067530427,2000-01-03,2020-04-01,Q,Biotechnology: Biological Products (No Diagnostic Substances),85586320000.0
+Health Care,Q,2,Amgen Inc. - Common Stock,AMGN,7093557.2634471925,2000-01-03,2020-04-01,Q,Biotechnology: Biological Products (No Diagnostic Substances),119140882050.68
+Health Care,Q,3,"Walgreens Boots Alliance, Inc. - Common Stock",WBA,5382488.299960738,2000-01-03,2020-04-01,Q,Medical/Nursing Services,70220591700.48
+Health Care,Q,4,Mylan N.V. - Common Stock,MYL,4728767.21633294,2000-01-03,2020-04-01,Q,Major Pharmaceuticals,16551770861.1
+Health Care,Q,5,"Moderna, Inc. - Common Stock",MRNA,3739075.5287009063,2018-12-07,2020-04-01,Q,Biotechnology: Biological Products (No Diagnostic Substances),6851988673.04
+Health Care,Q,6,Biogen Inc. - Common Stock,BIIB,2910765.8421672555,2000-01-03,2020-04-01,Q,Biotechnology: Biological Products (No Diagnostic Substances),65504025072.0
+Health Care,Q,7,Endo International plc - Ordinary Shares,ENDP,2427867.6079064137,2000-07-18,2020-04-01,Q,Major Pharmaceuticals,2402732379.6
+Health Care,Q,8,"PDL BioPharma, Inc. - Common Stock",PDLI,2385732.6266195523,2000-01-03,2020-04-01,Q,Biotechnology: Biological Products (No Diagnostic Substances),494859358.68
+Health Care,Q,9,"Hologic, Inc. - Common Stock",HOLX,2317574.734982332,2000-01-03,2020-04-01,Q,Medical Electronics,13484960564.43
+Health Care,Q,10,Horizon Therapeutics Public Limited Company - Ordinary Shares,HZNP,2217751.73992674,2011-07-28,2020-04-01,Q,Major Pharmaceuticals,3800079493.05
+Health Care,S,1,"Co-Diagnostics, Inc. - Common Stock",CODX,1411854.2691751085,2017-07-05,2020-04-01,Q,Medical/Dental Instruments,20218918.8
+Health Care,S,2,"Organovo Holdings, Inc. - Common Stock",ONVO,1234476.588465298,2012-02-14,2020-04-01,Q,Biotechnology: Biological Products (No Diagnostic Substances),127857874.87
+Health Care,S,3,"Viking Therapeutics, Inc. - Common Stock",VKTX,1225466.344605475,2015-04-28,2020-04-01,Q,Major Pharmaceuticals,645282508.71
+Health Care,S,4,"Onconova Therapeutics, Inc. - Common Stock",ONTX,1147964.2517814727,2013-07-25,2020-04-01,Q,Major Pharmaceuticals,20427192.0
+Health Care,S,5,"Genprex, Inc. - Common Stock",GNPX,1121873.7154150198,2018-03-29,2020-04-01,Q,Major Pharmaceuticals,22417417.0007
+Health Care,S,6,"Riot Blockchain, Inc - Common Stock",RIOT,1082436.7164179105,2016-03-31,2020-04-01,Q,Biotechnology: In Vitro & In Vivo Diagnostic Substances,48348463.14
+Health Care,S,7,"Biocept, Inc. - Common Stock",BIOC,1030603.6774193548,2014-02-05,2020-04-01,Q,Medical Specialities,5866778.92
+Health Care,S,8,Exact Sciences Corporation - Common Stock,EXAS,967844.9491806679,2001-02-01,2020-04-01,Q,Biotechnology: Commercial Physical & Biological Resarch,10516589795.1
+Health Care,S,9,"Trevena, Inc. - Common Stock",TRVN,897526.9156471345,2014-01-31,2020-04-01,Q,Major Pharmaceuticals,122661885.37
+Health Care,S,10,"Moleculin Biotech, Inc. - Common Stock",MBRX,845712.7461139896,2016-06-02,2020-04-01,Q,Major Pharmaceuticals,37369695.6637
