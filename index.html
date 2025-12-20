@@ -16,7 +16,7 @@
     <nav class="header-nav">
         <ul>
             <li><a href="#intro">Overview</a></li>
-            <li><a href="#research">Research</a></li>
+            <li><a href="#research-questions">Research</a></li>
             <li><a href="#methodology">Methodology</a></li>
             <li><a href="#story">Story</a></li>
         </ul>
@@ -25,8 +25,14 @@
 <div class="hero-title animate-title">
   <h1 class="title-main">The Market as a Mirror</h1>
   <h2 class="title-sub">
-    How Global Events and Social Emotions Shape Finance (2000–2025)
+    How Global Events Shape Finance (2000–2025)
   </h2>
+</div>
+
+<div class="hero-bridge">
+  <p class="bridge-kicker">Abstract</p>
+  <p class="bridge-text">
+        Over the past 25 years, the world has been repeatedly shaken by events that escaped prediction and control. Terrorist attacks, natural disasters, technological breakthroughs, political ruptures, and global health crises have punctuated recent history.
 </div>
 
 <div style="width: 100%; height: 800px;">
@@ -39,82 +45,99 @@
     </iframe>
 </div>
 
-  <div class="timeline-container">
-    <div id="timeline"></div>
-  </div>
-  <script type="module">
-    import { getAllEventItems } from './assets/js/eventUtils.js';
 
-    async function renderTimeline() {
-      const items = new vis.DataSet(await getAllEventItems());
-      const bounds = {
-        min: '2000-01-01',
-        max: '2025-10-31'
-      };
-      const options = {
-        autoResize: false,
-        showCurrentTime: false,
-        locale: 'en',
-        start: bounds.min,
-        end: bounds.max,
-        min: bounds.min,
-        max: bounds.max
-      };
-      const container = document.getElementById('timeline');
-      return new vis.Timeline(container, items, options);
-    }
-
-    renderTimeline().catch(error => {
-      console.error('Failed to render timeline', error);
-    });
-  </script>
 
 <div class="hero-intro animate-intro" id="intro">
-    <p class="intro-label">The Pulse of the Market</p>
+    <p class="intro-label">A market seen through its pulse</p>
     <p class="intro-text">
-      We believe that financial markets do not only depend on  cold algorithms or rational 
-      systems. They are living, social organisms.  They are shaped by human emotions, 
-      communication, and collective excitement or fear. Beneath the charts and models lies
-       a system that reacts, hesitates, panics, adapts, and sometimes heals.
+      Financial markets are not just cold algorithms or rational systems. They are living, social organisms shaped by collective excitement and fear. Beneath charts and models lies a system that reacts, hesitates, panics and adapts.
       <br><br>
-      Over the past 25 years, the world has been repeatedly shaken by events that escaped
-       prediction and control. Terrorist attacks, natural disasters, technological 
-       breakthroughs, political ruptures, and global health crises have punctuated recent 
-       history. Each time, markets responded almost instantly. Not by thinking — but by 
-       feeling. Fear turned into volatility. Hope into rallies. Uncertainty into sharp,
-        collective movements across sectors.
+      At first glance, the NASDAQ 100 from 2000 to 2025 appears stable as a long-term rise. Yet the curve is not smooth,  just like a pulse under stress. It carries drops, recoveries and sudden disruptions moments when the market loses its balance.
+      <br><br>
+      Some of these movements align with major events, such as the 2008 financial crisis. Others remain harder to explain. We will examine six landmark U.S. events to explore how crises translate into market behavior.
     </p>
-  </div>
-  <div class="research-section animate-section" id="research">
-    <p class="section-label">Research Questions</p>
-  
-    <ul class="research-list">
-      <li>
-        How do different types of crises — wars, pandemics, or political shocks —
-        affect global and sector-specific market performance?
-      </li>
-  
-      <li>
-        Which industries or assets (e.g., gold, energy, technology, luxury)
-        act as safe havens versus shock amplifiers during crises?
-      </li>
-  
-      <li>
-        How long does it typically take for assets to recover to their pre-crisis levels,
-        and how does this vary across sectors?
-      </li>
-  
-      <li>
-        Do early warning signals such as abnormal trading volumes or social media activity
-        emerge before or during crises?
-      </li>
-  
-      <li>
-        How do influential figures (e.g., politicians, CEOs) or collective sentiment
-        on social media affect short-term market movements?
-      </li>
-    </ul>
-  </div>
+</div>
+
+    <div class="timeline-container">
+      <div id="timeline"></div>
+    </div>
+      <script type="module">
+        import { getAllEventItems } from './assets/js/eventUtils.js';
+
+        async function renderTimeline() {
+          const items = new vis.DataSet(await getAllEventItems());
+          const options = {
+            autoResize: false,
+            zoomable: true,
+            showCurrentTime: false,
+            locale: 'en',
+          };
+          const container = document.getElementById('timeline');
+          return new vis.Timeline(container, items, options);
+        }
+
+        renderTimeline().catch(error => {
+          console.error('Failed to render timeline', error);
+        });
+      </script>
+
+    <div class="intro-research" id="research-questions">
+      <h4 class="intro-subheading">The four research questions</h4>
+      <p class="intro-text">
+        This data story is structured around four core questions, each corresponding to a chapter in our analysis.
+        These questions guide our exploration from immediate reaction to long-term recovery, from observation to interpretation.
+      </p>
+
+      <ul class="research-list">
+        <li class="research-card">
+          <a class="research-link" href="#story">
+            <div class="research-number">01</div>
+            <div class="research-copy">
+              <h5 class="research-title">The Anatomy: Fear or Euphoria?</h5>
+              <p class="research-desc">
+                When a shock occurs, how does it first manifest in the market? Which assets plummet or surge, and where does trading turn abnormal?
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="research-card">
+          <a class="research-link" href="#sectoral">
+            <div class="research-number">02</div>
+            <div class="research-copy">
+              <h5 class="research-title">Sectoral Natural Selection</h5>
+              <p class="research-desc">
+                Are sectoral reactions random, or do different types of crises consistently favor or penalize specific industries?
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="research-card">
+          <a class="research-link" href="#contagion">
+            <div class="research-number">03</div>
+            <div class="research-copy">
+              <h5 class="research-title">The Speed of Recovery</h5>
+              <p class="research-desc">
+                How long does it take for the market to recover after a shock, and what does the recovery pace reveal about the nature of the crisis?
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="research-card">
+          <a class="research-link" href="#resilience">
+            <div class="research-number">04</div>
+            <div class="research-copy">
+              <h5 class="research-title">Predicting Resilience</h5>
+              <p class="research-desc">
+                Is resilience purely circumstantial, or can structural characteristics explain why some sectors consistently recover faster than others?
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
 
   <div class="methodology-section" id="methodology">
     <p class="section-label">Methodology</p>
@@ -332,7 +355,7 @@
       console.error('Failed to initialize fear section', error);
     });
   </script>
-  <div class="chapter-section">
+  <div class="chapter-section" id="sectoral">
     <h3>Sectoral Natural Selection</h3>
     <p>
       Not all sectors react equally to crises. Some absorb shocks, while others amplify
@@ -456,7 +479,7 @@
       console.error('Failed to initialize heatmap section', error);
     });
   </script>
-  <div class="chapter-section">
+  <div class="chapter-section" id="contagion">
     <h3>The Speed of Contagion</h3>
     <p>
       Crises rarely stay confined to one market or sector. In this chapter, we study
@@ -469,7 +492,7 @@
     <div class="viz-placeholder">[ Sector Heatmap Placeholder ]</div>
 
   </div>
-  <div class="chapter-section">
+  <div class="chapter-section" id="resilience">
     <h3>Predicting Resilience</h3>
     <p>
       Some assets recover faster than others. In this chapter, we investigate which
