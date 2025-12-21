@@ -606,6 +606,7 @@ hr {
   color: #6b7280;
   font-size: 12px !important;
   line-height: 1.15;
+  white-space: pre-line;
 }
 
 .selection-status {
