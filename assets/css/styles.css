@@ -264,9 +264,13 @@ hr {
 
 /* 主标题动画 */
 .animate-title {
-  text-align: center;
+  text-align: center;      /* 确保容器内文字居中 */
   opacity: 0;
   animation: fadeInTitle 1.5s ease-out forwards;
+  width: 100%;             /* 确保容器跨越全宽 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Flex 环境下的居中 */
 }
 
 @keyframes fadeInTitle {
@@ -281,20 +285,25 @@ hr {
 }
 
 .title-main {
-  font-size: 4.5rem;
-  font-weight: bold;
-  margin-bottom: 0.2em;
+  font-size: 6rem;         /* 将字号从 4.5rem 增加到 6.rem (约 96px) */
+  font-weight: 700;        /* 增加字重，让它更有冲击力 */
+  margin-bottom: 0.1em;
   color: #f9fafb;
+  line-height: 1.1;        /* 紧凑的行高 */
+  letter-spacing: -0.02em; /* 稍微紧缩字间距，看起来更专业 */
 }
 
 .title-sub {
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: #555;
+  font-size: 2rem;         /* 同时也稍微调大副标题 */
+  font-weight: 400;
+  color: #e5e7eb;
+  max-width: 800px;        /* 限制宽度，防止长句子在大屏上太散 */
+  margin: 0 auto;          /* 副标题水平居中 */
 }
 .hero-title {
-  background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.3)), url('../img/background.png') center/cover no-repeat;
-  padding: 120px 20px 100px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), 
+              url('../img/background.jpg') center/cover no-repeat;
+  padding: 260px 20px 200px;
   color: #f9fafb;
 }
 
