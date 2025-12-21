@@ -1020,7 +1020,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  width: 100%;
   position: sticky; 
   top: 0; 
   z-index: 1000;
@@ -1054,7 +1054,7 @@ hr {
 }
 
 .header-nav li {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .header-nav a {
@@ -1079,7 +1079,7 @@ header {
   position: static;
   -webkit-font-smoothing: initial; 
 }
-header ul, header li, header ul a, header ul li + li + li {
+header ul, header li, header ul a, header ul li + li + li { 
   all: unset;
 }
 
@@ -1114,4 +1114,33 @@ header ul, header li, header ul a, header ul li + li + li {
   color: #f9624f;
   border-bottom: 2px solid #f9624f;
   font-weight: bold;
+}
+
+.header-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.header-nav li {
+  margin-left: 10px;
+  width: auto !important;
+  float: none !important;
+}
+
+.site-header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.98);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 9999;
 }
