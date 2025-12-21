@@ -435,13 +435,13 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       const sector = sectors.find(item => String(item.key) === String(selectedSectorKey));
 
       if (!event || !sector) {
-        insightBody.textContent = 'Select a combination above to read the interpretation.';
+        insightBody.innerHTML = 'Select a combination above to read the interpretation.';
         return;
       }
 
       const insight = await getInsight(selectedEventId, selectedSectorKey);
       const fallback = `${event.name} × ${sector.label}`;
-      insightBody.textContent = insight?.insight || `No interpretation has been written for ${fallback}.`;
+      insightBody.innerHTML = insight?.insight || `No interpretation has been written for ${fallback}.`;
     }
 
     async function updateSelection() {
@@ -633,11 +633,11 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     async function updateHeatmapInsight(event) {
       if (!heatmapInsightBody) return;
       if (!event) {
-        heatmapInsightBody.textContent = 'Select an event above to read the heatmap interpretation.';
+        heatmapInsightBody.innerHTML = 'Select an event above to read the heatmap interpretation.';
         return;
       }
       const insight = await getHeatmapInsight(event.id);
-      heatmapInsightBody.textContent = insight?.insight || `No interpretation has been written for ${event.name}.`;
+      heatmapInsightBody.innerHTML = insight?.insight || `No interpretation has been written for ${event.name}.`;
     }
 
     (async function initHeatmap() {
@@ -709,11 +709,11 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     async function updateRecoveryInsight(event) {
       if (!recoveryInsightBody) return;
       if (!event) {
-        recoveryInsightBody.textContent = 'Select an event above to see the recovery chart and interpretation.';
+        recoveryInsightBody.innerHTML = 'Select an event above to see the recovery chart and interpretation.';
         return;
       }
       const insight = await getRecoveryInsight(event.id);
-      recoveryInsightBody.textContent = insight?.insight || `No interpretation has been written for ${event.name}.`;
+      recoveryInsightBody.innerHTML = insight?.insight || `No interpretation has been written for ${event.name}.`;
     }
 
     (async function initRecovery() {
