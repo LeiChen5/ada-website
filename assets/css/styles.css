@@ -284,6 +284,7 @@ hr {
   font-size: 4.5rem;
   font-weight: bold;
   margin-bottom: 0.2em;
+  color: #f9fafb;
 }
 
 .title-sub {
@@ -292,8 +293,13 @@ hr {
   color: #555;
 }
 .hero-title {
-  background-color: #f3f4f6;
+  background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.3)), url('../img/background.png') center/cover no-repeat;
   padding: 120px 20px 100px;
+  color: #f9fafb;
+}
+
+.hero-title .title-sub {
+  color: #e5e7eb;
 }
 
 .hero-bridge {
