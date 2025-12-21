@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>The Market as a Mirror</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/interactive-map.css">
   <link rel="stylesheet" href="assets/vendor/vis-timeline/vis-timeline-graph2d.min.css">
   <script src="assets/vendor/vis-timeline/vis-timeline-graph2d.min.js"></script>
 
@@ -877,7 +878,49 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       Rather than predicting the next shock, our goal is to understand how markets
       are likely to react — and how fear, resilience, and recovery tend to unfold.
     </p>
-    <div class="viz-placeholder">[ Sector Heatmap Placeholder ]</div>
+    <div class="idx-main-wrapper" id="idx-container">
+      <div class="idx-column" id="idx-events">
+          <div class="idx-item" data-id="terrorist attack">terrorist attack</div>
+          <div class="idx-item" data-id="natural disaster">Natural disaster</div>
+          <div class="idx-item" data-id="financial Crisis">Financial Crisis</div>
+          <div class="idx-item" data-id="tech-boom">AI Innovation</div>
+          <div class="idx-item" data-id="political event">political event</div>
+          <div class="idx-item" data-id="public Health Crisis">Public Health Crisis</div>
+      </div>
+
+      <svg id="idx-svg-canvas">
+          <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#3498db" />
+              </marker>
+          </defs>
+      </svg>
+
+      <div class="idx-column" id="idx-sectors">
+          <div class="idx-item" data-sector="basic Industries">Basic Industries</div>
+          <div class="idx-item" data-sector="energy">Energy</div>
+          <div class="idx-item" data-sector="finance">Finance</div>
+          <div class="idx-item" data-sector="health Care">Health Care</div>
+          <div class="idx-item" data-sector="tech">Technology</div>
+          <div class="idx-item" data-sector="transportation">Transportation</div>
+      </div>
+  </div>
+
+  <script src="assets/js/interactive-map.js"></script>
+  
+  <script>
+      const myMapping = {
+      'terrorist attack': ['basic Industries', 'health Care'],
+      'natural disaster': ['finance'],
+      'financial Crisis': ['finance', 'tech','transportation','health Care'],
+      'tech-boom': ['basic Industries', 'transportation','finance','tech'],
+      'political event': ['finance','transportation', 'basic Industries'],
+      'public Health Crisis': ['health Care', 'tech']
+    };
+      
+      // 页面加载完成后启动
+      window.onload = () => initInteractiveMap(myMapping);
+  </script>
 
   </div>
   <div class="chapter-section">
