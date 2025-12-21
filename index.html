@@ -812,20 +812,12 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     <h3>Predicting Resilience</h3>
     <p><strong>Can resilience be diagnosed?</strong></p>
     <p>
-      After observing how shocks emerge, spread, and eventually fade, we reach the final stage of our examination. The symptoms are familiar now. The reactions have been measured. Recovery times have been compared.
+      Up to this point, resilience has appeared as an outcome, something observed only after the market has absorbed a shock. We measured how fear emerged, how it spread, and how long it took to fade. Yet a deeper question remains unanswered: are some parts of the market structurally more capable of recovery, or is resilience merely a product of circumstance?
     </p>
     <p>
-      One question remains:
+      In complex systems, recovery is rarely accidental. It reflects underlying structure, exposure, and adaptive capacity. This chapter explores whether market resilience follows a similar logic, whether it can be partially diagnosed by observing sectoral behavior across different types of stress.
     </p>
-    <p>
-      Is resilience merely something we observe in hindsight — or does the market carry pre-existing strengths that make some sectors more likely to recover than others?
-    </p>
-    <p>
-      In medicine, recovery is rarely random. Age, structure, exposure, and underlying conditions all shape how a body responds to stress. Markets may not be so different. Some sectors appear fragile under pressure, while others repeatedly regain balanceFais moi  regardless of the nature of the shock.
-    </p>
-    <p>
-      This chapter explores whether resilience leaves a trace.
-    </p>
+
 
     <div class="chart-card chart-card-full">
       <div class="chart-card-header">
@@ -840,13 +832,13 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
 
     <div class="fear-copy">
       <p>
-        The heatmap below captures sector performance sixty days after each event, measured through cumulative abnormal returns relative to the benchmark. By freezing the market at a common recovery horizon, this visualization allows direct comparison across sectors and crisis types.
+        The heatmap below summarizes sector-level cumulative abnormal returns sixty days after each event, relative to the benchmark. By fixing the recovery horizon, it offers a synthetic view of how different sectors stand once the initial shock has passed.
       </p>
       <p>
-        Several tendencies emerge clearly. Health Care displays a consistently positive recovery profile, largely independent of the event. Finance rebounds strongly after political and systemic disruptions, yet falters during health-driven crises. Energy reacts sharply to context, recovering after geopolitical shocks but suffering persistent losses after COVID-19. Technology benefits from innovation and political clarity, while remaining fragile under uncertainty. Basic Industries and Transportation show recovery patterns that depend heavily on the nature of the disruption.
+        Clear tendencies emerge. Health Care displays consistent positive recovery across most events, suggesting structural robustness rather than event-specific luck. Finance recovers strongly after political and systemic disruptions, yet performs poorly following health-driven crises. Energy appears highly sensitive to context, rebounding after geopolitical or political shocks but suffering deeply during the COVID-19 pandemic. Technology benefits from innovation- and policy-related events, while Basic Industries and Transportation remain more exposed, with recovery highly dependent on the nature of the shock.
       </p>
       <p>
-        Rather than revealing universal winners, this snapshot highlights conditional resilience — strength that depends on context.
+        This snapshot reveals that recovery is not uniform. Sectors do not return to equilibrium in the same way, nor for the same reasons.
       </p>
     </div>
 
@@ -863,21 +855,16 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
 
     <div class="fear-copy">
       <p>
-        Patterns alone do not explain resilience. To move beyond visual comparison, we introduce a model-based perspective designed to isolate which characteristics are systematically associated with faster recovery.
+        While the heatmap highlights recurring patterns, it does not explain whether these outcomes reflect genuine structural advantages or event-specific coincidences. The forest plot addresses this question by estimating the average sector-level effect on cumulative abnormal returns across events.
       </p>
       <p>
-        The forest plot summarizes the estimated influence of structural factors such as sector affiliation and firm characteristics on recovery outcomes. Each coefficient reflects how strongly a given factor shifts the probability or speed of recovery, holding others constant. Some effects emerge as stable and directional, while others remain weak or inconclusive.
+        Finance and Health Care exhibit positive mean effects relative to the benchmark, indicating a higher likelihood of outperforming during recovery phases. However, wide confidence intervals reveal substantial variability across events. Technology and Transportation cluster around neutrality, reflecting highly context-dependent behavior. Energy shows a slightly negative average effect combined with the largest uncertainty, reinforcing its vulnerability to certain shock types. Basic Industries show no strong systematic advantage or disadvantage.
       </p>
       <p>
-        This approach does not promise prediction in the strict sense. Instead, it offers a diagnostic lens identifying which features consistently matter when the system attempts to restore equilibrium.
+        Importantly, no sector exhibits a dominant or universally positive effect. This suggests that resilience is not deterministic. Structural tendencies exist, but they are moderated by the nature of the shock and the broader market environment.
       </p>
     </div>
 
-    <div class="fear-copy">
-      <p>
-        Resilience is not random. It emerges from the interaction between the shock and the structure of the market. Markets do not anticipate trauma — but in recovery, they reveal their architecture.
-      </p>
-    </div>
 
     <p>
       <strong>What resilience reveals</strong>
@@ -894,15 +881,21 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
 
   </div>
   <div class="chapter-section">
-    <h3>Crisis Playbook — The Action Guide</h3>
+    <h3>Crisis Guidebook — Finance for Losers</h3>
     <p>
-      Finally, we synthesize our findings into a practical framework.
-      This chapter translates historical patterns into insights that help
-      interpret future crises.
+      <strong>A very short guide for when everything goes wrong</strong>
     </p>
     <p>
-      Rather than predicting the next shock, our goal is to understand how markets
-      are likely to react — and how fear, resilience, and recovery tend to unfold.
+      Let’s be honest. Most of us do not open financial textbooks when a crisis hits. We open our phones. We refresh charts. We panic. Some sell at the bottom. Some buy at the top. Almost everyone asks the same question: “Why didn’t I see this coming?"
+    </p>
+    <p>
+      This playbook is not here to turn you into a trader. It is here to help you recognize the symptoms. Just like a fever doesn’t tell you the disease, a falling market doesn’t tell you what will survive. Over the last 25 years, we observed the same pattern again and again: panic spreads fast, but recovery follows rules. Not perfect rules. Not guaranteed ones. But patterns, visible if you know where to look.
+    </p>
+    <p>
+      Think of this as first aid for financial stress. You won’t prevent the accident. But you might avoid making it worse.
+    </p>
+    <p>
+      You don’t need to predict crises. You need to recognize patterns.<br>Markets don’t think. They react.<br>And like any system under stress, their behavior leaves traces.
     </p>
     <div class="idx-main-wrapper" id="idx-container">
       <div class="idx-column" id="idx-events">
@@ -948,14 +941,6 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       window.onload = () => initInteractiveMap(myMapping);
   </script>
 
-  </div>
-  <div class="chapter-section">
-    <div class="fear-copy">
-      <p><strong>Final message to the reader</strong></p>
-      <p>You don’t need to predict crises. You need to recognize patterns.</p>
-      <p>Markets don’t think. They react.</p>
-      <p>And like any system under stress, their behavior leaves traces — if you know how to read the signs.</p>
-    </div>
   </div>
 
   <footer class="site-footer">
