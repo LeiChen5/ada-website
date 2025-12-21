@@ -5,7 +5,6 @@ https://leichen5.github.io/ada-website/
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Market as a Mirror</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
