@@ -903,9 +903,6 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     <p>
       Think of this as first aid for financial stress. You won’t prevent the accident. But you might avoid making it worse.
     </p>
-    <p>
-      You don’t need to predict crises. You need to recognize patterns.<br>Markets don’t think. They react.<br>And like any system under stress, their behavior leaves traces.
-    </p>
     <div class="idx-main-wrapper" id="idx-container">
       <div class="idx-column" id="idx-events">
           <div class="idx-item" data-id="terrorist attack">Terrorist attack</div>
@@ -939,18 +936,22 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
   
   <script>
       const myMapping = {
-      'terrorist attack': ['basic Industries', 'health Care'],
-      'natural disaster': ['finance'],
-      'financial Crisis': ['finance', 'tech','transportation','health Care'],
-      'tech-boom': ['basic Industries', 'transportation','finance','tech'],
-      'political event': ['finance','transportation', 'basic Industries'],
-      'public Health Crisis': ['health Care', 'tech']
+      'terrorist attack': ['basic Industries', 'finance'],
+      'natural disaster': ['energy','tech'],
+      'financial Crisis': ['finance', 'basic Industries','energy'],
+      'tech-boom': ['health Care', 'transportation'],
+      'political event': ['finance','transportation', 'health Care'],
+      'public Health Crisis': ['tech']
     };
       
       window.onload = () => initInteractiveMap(myMapping);
   </script>
 
   </div>
+
+  <p>
+    You don’t need to predict crises. You need to recognize patterns.<br>Markets don’t think. They react.<br>And like any system under stress, their behavior leaves traces.
+  </p>
 
   <footer class="site-footer">
     <p>
