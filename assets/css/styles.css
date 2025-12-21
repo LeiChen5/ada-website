@@ -1066,8 +1066,8 @@ hr {
 }
 
 .header-nav a:hover {
-  color: #39c;
-  border-bottom: 2px solid #39c;
+  color:#f9624f;
+  border-bottom: 2px solid #f9624f;
 }
 
 
@@ -1088,3 +1088,28 @@ header ul, header li, header ul a, header ul li + li + li {
  .chapter-section h3 {
      scroll-margin-top: 85px; 
  }
+
+ .site-header-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  transition: all 0.3s ease;
+}
+
+
+.header-nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+
+.header-nav ul li a.active {
+  color: #f9624f;
+  border-bottom: 2px solid #f9624f;
+  font-weight: bold;
+}
