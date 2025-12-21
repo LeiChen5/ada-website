@@ -332,12 +332,14 @@ hr {
 
 .timeline-container{
   width: 100%;
-  margin: 40px 0 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 #timeline {
   width: 100%;
+  margin: 0 auto;
 }
 
 /* Constrain timeline hover tooltip width */
