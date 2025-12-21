@@ -129,7 +129,7 @@
     <div class="methodology-block sampling-block">
       <div class="methodology-copy">
         <p class="method-kicker">Data construction & sampling strategy</p>
-        <h4 class="method-block-title">Méthodologie</h4>
+        <h4 class="method-block-title">Methodology</h4>
         <ul class="method-list">
           <li><strong>Stock selection.</strong> The initial dataset (more than 8,000 assets) required rigorous selection to create a representative and usable sample.</li>
           <li><strong>Exclusion of ETFs.</strong> These instruments are composed of several stocks, often from different sectors. We excluded them to avoid ambiguity in sector analysis.</li>
@@ -214,16 +214,25 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     <div class="fear-copy">
       <h3 class="section-label">The Anatomy of Fear & Euphoria</h3>
       <p>
-      Market reactions to sudden shocks are rarely uniform. Some events trigger abrupt drops, others lead to hesitation, and a few are followed by rapid recoveries or even rallies. What appears as a simple deviation often hides very different dynamics.
+        <strong>When fear enters the system</strong>
       </p>
       <p>
-       This raises a central question: when an unexpected event occurs, how does the market respond in its very first moments? Is there a common pattern, or does each shock generate a distinct reaction shaped by context and expectations?
+      Fear is rarely uniform. In some moments, it erupts suddenly and overwhelms the entire market. In others, it spreads slowly, hesitates, or even coexists with optimism. The same system, exposed to different shocks, can react in profoundly different ways.
+      </p>
+      <p>
+      This raises a fundamental question: when uncertainty strikes, does the market respond according to fixed rules, or does each event trigger a unique emotional reaction? Is fear an automatic reflex, or a context-dependent response shaped by expectations, narratives, and collective interpretation?
       </p>
       <p> 
-      To explore this, we begin at the aggregate level. We examine the behavior of the QQQ index around six major U.S. events, aligning each trajectory at the event date to isolate the market’s immediate response, independent of long-term trends.
+      To explore this question, we begin by observing the market as a whole. Before focusing on individual sectors, we examine how the QQQ index behaves around six major events, all aligned on a common timeline. By normalizing each trajectory at the event date, we isolate the market’s immediate response to uncertainty.
       </p>
       <p>
-      This chapter focuses on these initial reactions. By analyzing short-term market and sector-level behavior, we observe how uncertainty first manifests in the system whether it takes the form of fear, euphoria, or something in between.
+      Only then does the pattern emerge. Some events provoke sharp and immediate declines, others lead to hesitation, and a few are followed by rapid recoveries or even rallies. In certain cases, fear fades quickly; in others, it persists well beyond the initial shock. Yet across all events, one feature remains constant: a clear disruption around the moment the shock occurs.
+      </p>
+      <p>
+      This comparison reveals that fear does not have a single signature. The same market can panic, stall, or rebound depending not only on the magnitude of the event, but on how it is perceived and absorbed by investors.
+      </p>
+      <p>
+      This chapter zooms in on these first moments. By breaking each event down into sector-level reactions, we examine how fear enters the system — sometimes concentrated, sometimes systemic — and how its early form already hints at the dynamics that will follow.
       </p>
     </div>
 
@@ -461,17 +470,24 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     <h3>Sectoral Natural Selection</h3>
     
     <p>
-      From isolated reactions to relative outcomes
-      In Chapter 1, sectors were examined in isolation. Each reaction was treated as a standalone response to shock, allowing us to observe how fear or euphoria manifests within a given industry. This approach captured the anatomy of initial stress, but it deliberately avoided comparison.
-      This chapter adopts a different perspective.
+      <strong>From Isolated Reactions to Relative Outcomes</strong>
     </p>
     <p>
-      Rather than asking how each sector reacts on its own, we ask how sectors react relative to one another. Once the first wave of fear has passed, markets begin to differentiate. Capital flows shift, hierarchies emerge, and some industries stabilize while others continue to deteriorate. What matters is no longer the absolute reaction, but the relative position of each sector within the market.
+      In the previous chapter, sectors were examined in isolation to capture the "anatomy of initial stress". Observing how fear or euphoria manifested within each industry independently. This chapter adopts a broader perspective: rather than asking how each sector reacts on its own, we examine how they react relative to one another.
     </p>
-
     <p>
-      The question becomes unavoidable: are these relative outcomes random, or does the type of crisis systematically reshape sectoral hierarchies?
-      To address this, we compare sector-level performance using heatmaps. Each heatmap provides a compressed, comparative view of the market structure around an event, revealing contrasts that are invisible when sectors are analyzed independently.
+      Once the first wave of shock passes, markets begin to differentiate. Capital flows shift and new hierarchies emerge as some industries stabilize while others continue to deteriorate. By observing the Cumulative Abnormal Return (CAR) relative to the QQQ benchmark, we can identify a form of "sectoral natural selection." This approach moves beyond absolute reactions to reveal the relative position of each sector within the market structure.    
+    </p>
+    <p>
+      The central question is whether these outcomes are random or if specific types of crises systematically reshape sectoral hierarchies. To address this, we use heatmaps to provide a compressed, comparative view of sector trajectories over a 90-day period (from D-30 to D+60). This allows us to distinguish between:
+    </p>
+    <ul>
+      <li> Safe Havens: Defensive sectors that absorb stress and outperform during crises.</li>
+      <li>Exposed Sectors: Vulnerable industries that bear the brunt of the shock.</li>
+      <li>Opportunistic Beneficiaries: Sectors that adapt or capitalize on a sudden paradigm shift.</li> 
+    </ul>
+    <p>
+      Each heatmap thus reveals the competitive hierarchy imposed by the market in response to the unexpected, exposing contrasts that remain invisible when sectors are analyzed in isolation.
     </p>
 
     <div class="fear-sticky heatmap-sticky">
@@ -714,17 +730,30 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     <h3>The Speed of Contagion</h3>
     <p><strong>When does the system begin to heal?</strong></p>
     <p>
-      In the previous chapters, we observed how stress enters the market and how it redistributes across sectors. We saw fear appear, intensify, and concentrate. But fear alone does not define the severity of a shock. What matters just as much is how long it stays in the system.
+      In the previous chapters, we observed how stress enters the market and redistributes across sectors. We analyzed the intensity of fear and the hierarchy of relative outcomes. However, the severity of a shock is not defined by its initial impact alone; it is equally determined by its duration. Some disturbances provoke sharp reactions followed by rapid stabilization, while others leave the market weakened and unable to return to its previous state for months.    </p>
+    <p>
+      This chapter shifts the focus to the temporal dimension of the crisis. We seek to measure the system’s ability to absorb uncertainty and restore balance by observing how long it takes for different parts of the market to regain their pre-event equilibrium. Recovery time acts as a vital sign: it allows us to distinguish between temporary volatility shocks and structural trend breaks that linger like chronic conditions.
     </p>
     <p>
-      Some disturbances provoke sharp reactions followed by quick stabilization. Others leave the market weakened, slow to recover, unable to return to its previous state. The difference lies not in the initial impact, but in the pace of recovery.
+      To quantify this pace of recovery and understand the depth of contagion, we employ boxplots for each of the six events studied. This approach allows for a precise analysis of the distribution of recovery times:
     </p>
-    <p>
-      This chapter focuses on time. We observe how long it takes for different parts of the market to regain their pre-event state after a shock. Recovery time acts as a vital sign: it captures the system’s ability to absorb stress and restore balance.
-    </p>
-    <p>
-      The boxplots below show the distribution of recovery times across sectors for each event. Each point represents an individual stock. Each box reflects how quickly an entire sector regains stability. Together, they reveal whether a shock fades like a passing fever — or lingers like a chronic condition.
-    </p>
+    <ul>
+      <li>
+      Indicator: The measurement is expressed in days required for the share price to return to its specific valuation on the day of the event.
+      </li>
+      <li>
+      Distribution Analysis: Our analysis focuses on three key metrics:
+        <ul>
+          <li>The Median: Reflecting the average velocity of recovery for a sector.</li>
+          <li>The Interquartile Range (IQR): Measuring the homogeneity of the sectoral response.</li>
+          <li>Outliers: Identifying isolated cases of extreme vulnerability or prolonged distress.</li>
+        </ul>
+    
+     </li>
+    </ul>
+      <p>
+        Together, these boxplots reveal whether a shock fades like a passing fever or persists as a long-term scar on the market's stability.
+      </p>
     <div class="fear-sticky heatmap-sticky">
       <div class="fear-sticky-inner">
         <div class="fear-sticky-left">
@@ -759,7 +788,7 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
 
     <div class="fear-copy">
       <p>
-        From shock to recovery
+        <strong>From shock to recovery</strong> 
       </p>
       <p>
         Across events, one pattern becomes clear: shocks do not leave the system at the same speed they enter it. Some propagate rapidly but dissipate just as fast. Others spread more slowly, embedding themselves deep into market dynamics.
@@ -783,8 +812,12 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
     <h3>Predicting Resilience</h3>
     <p><strong>Can resilience be diagnosed?</strong></p>
     <p>
-      Markets do not only react to shocks. They recover and in doing so, reveal their structure.
+      Up to this point, resilience has appeared as an outcome, something observed only after the market has absorbed a shock. We measured how fear emerged, how it spread, and how long it took to fade. Yet a deeper question remains unanswered: are some parts of the market structurally more capable of recovery, or is resilience merely a product of circumstance?
     </p>
+    <p>
+      In complex systems, recovery is rarely accidental. It reflects underlying structure, exposure, and adaptive capacity. This chapter explores whether market resilience follows a similar logic, whether it can be partially diagnosed by observing sectoral behavior across different types of stress.
+    </p>
+
 
     <div class="chart-card chart-card-full">
       <div class="chart-card-header">
@@ -799,13 +832,13 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
 
     <div class="fear-copy">
       <p>
-        The heatmap below captures sector performance sixty days after each event, measured through cumulative abnormal returns relative to the benchmark. By freezing the market at a common recovery horizon, this visualization allows direct comparison across sectors and crisis types.
+        The heatmap below summarizes sector-level cumulative abnormal returns sixty days after each event, relative to the benchmark. By fixing the recovery horizon, it offers a synthetic view of how different sectors stand once the initial shock has passed.
       </p>
       <p>
-        Several tendencies emerge clearly. Health Care displays a consistently positive recovery profile, largely independent of the event. Finance rebounds strongly after political and systemic disruptions, yet falters during health-driven crises. Energy reacts sharply to context, recovering after geopolitical shocks but suffering persistent losses after COVID-19. Technology benefits from innovation and political clarity, while remaining fragile under uncertainty. Basic Industries and Transportation show recovery patterns that depend heavily on the nature of the disruption.
+        Clear tendencies emerge. Health Care displays consistent positive recovery across most events, suggesting structural robustness rather than event-specific luck. Finance recovers strongly after political and systemic disruptions, yet performs poorly following health-driven crises. Energy appears highly sensitive to context, rebounding after geopolitical or political shocks but suffering deeply during the COVID-19 pandemic. Technology benefits from innovation- and policy-related events, while Basic Industries and Transportation remain more exposed, with recovery highly dependent on the nature of the shock.
       </p>
       <p>
-        Rather than revealing universal winners, this snapshot highlights conditional resilience — strength that depends on context.
+        This snapshot reveals that recovery is not uniform. Sectors do not return to equilibrium in the same way, nor for the same reasons.
       </p>
     </div>
 
@@ -822,33 +855,47 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
 
     <div class="fear-copy">
       <p>
-        Patterns alone do not explain resilience. To move beyond visual comparison, we introduce a model-based perspective designed to isolate which characteristics are systematically associated with faster recovery.
+        While the heatmap highlights recurring patterns, it does not explain whether these outcomes reflect genuine structural advantages or event-specific coincidences. The forest plot addresses this question by estimating the average sector-level effect on cumulative abnormal returns across events.
       </p>
       <p>
-        The forest plot summarizes the estimated influence of structural factors such as sector affiliation and firm characteristics on recovery outcomes. Each coefficient reflects how strongly a given factor shifts the probability or speed of recovery, holding others constant. Some effects emerge as stable and directional, while others remain weak or inconclusive.
+        Finance and Health Care exhibit positive mean effects relative to the benchmark, indicating a higher likelihood of outperforming during recovery phases. However, wide confidence intervals reveal substantial variability across events. Technology and Transportation cluster around neutrality, reflecting highly context-dependent behavior. Energy shows a slightly negative average effect combined with the largest uncertainty, reinforcing its vulnerability to certain shock types. Basic Industries show no strong systematic advantage or disadvantage.
       </p>
       <p>
-        This approach does not promise prediction in the strict sense. Instead, it offers a diagnostic lens identifying which features consistently matter when the system attempts to restore equilibrium.
+        Importantly, no sector exhibits a dominant or universally positive effect. This suggests that resilience is not deterministic. Structural tendencies exist, but they are moderated by the nature of the shock and the broader market environment.
       </p>
     </div>
 
-    <div class="fear-copy">
-      <p>
-        Resilience is not random. It emerges from the interaction between the shock and the structure of the market. Markets do not anticipate trauma — but in recovery, they reveal their architecture.
-      </p>
-    </div>
+
+    <p>
+      <strong>What resilience reveals</strong>
+    </p>
+    <p>
+      This chapter suggests that market resilience is neither random nor uniform. It emerges from an interaction between the nature of the shock and the internal structure of the market. Certain sectors repeatedly demonstrate an ability to recover — but only when the disruption aligns with their structural strengths. Others remain vulnerable when shocks directly target their core dependencies.
+    </p>
+    <p>
+      Resilience, then, is not simply about surviving a crisis. It is about how well a sector is built to absorb stress, reallocate resources, and adapt once the initial shock has passed. While resilience cannot be predicted with certainty for a given event, it leaves identifiable traces that make some outcomes more likely than others.
+    </p>
+    <p>
+      Markets do not anticipate trauma. But under stress, they reveal their architecture. And it is not in collapse, but in recovery, that resilience becomes visible.
+    </p>
 
   </div>
   <div class="chapter-section">
-    <h3>Crisis Playbook — The Action Guide</h3>
+    <h3>Crisis Guidebook — Finance for Losers</h3>
     <p>
-      Finally, we synthesize our findings into a practical framework.
-      This chapter translates historical patterns into insights that help
-      interpret future crises.
+      <strong>A very short guide for when everything goes wrong</strong>
     </p>
     <p>
-      Rather than predicting the next shock, our goal is to understand how markets
-      are likely to react — and how fear, resilience, and recovery tend to unfold.
+      Let’s be honest. Most of us do not open financial textbooks when a crisis hits. We open our phones. We refresh charts. We panic. Some sell at the bottom. Some buy at the top. Almost everyone asks the same question: “Why didn’t I see this coming?"
+    </p>
+    <p>
+      This playbook is not here to turn you into a trader. It is here to help you recognize the symptoms. Just like a fever doesn’t tell you the disease, a falling market doesn’t tell you what will survive. Over the last 25 years, we observed the same pattern again and again: panic spreads fast, but recovery follows rules. Not perfect rules. Not guaranteed ones. But patterns, visible if you know where to look.
+    </p>
+    <p>
+      Think of this as first aid for financial stress. You won’t prevent the accident. But you might avoid making it worse.
+    </p>
+    <p>
+      You don’t need to predict crises. You need to recognize patterns.<br>Markets don’t think. They react.<br>And like any system under stress, their behavior leaves traces.
     </p>
     <div class="idx-main-wrapper" id="idx-container">
       <div class="idx-column" id="idx-events">
@@ -894,14 +941,6 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
       window.onload = () => initInteractiveMap(myMapping);
   </script>
 
-  </div>
-  <div class="chapter-section">
-    <div class="fear-copy">
-      <p><strong>Final message to the reader</strong></p>
-      <p>You don’t need to predict crises. You need to recognize patterns.</p>
-      <p>Markets don’t think. They react.</p>
-      <p>And like any system under stress, their behavior leaves traces — if you know how to read the signs.</p>
-    </div>
   </div>
 
   <footer class="site-footer">
