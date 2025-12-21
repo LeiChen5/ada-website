@@ -16,10 +16,13 @@
     </div>
     <nav class="header-nav">
         <ul>
-            <li><a href="#intro">Overview</a></li>
-            <li><a href="#research-questions">Research</a></li>
-            <li><a href="#methodology">Methodology</a></li>
-            <li><a href="#story">Story</a></li>
+          <li><a href="#intro" class="nav-link">Overview</a></li>
+          <li><a href="#research-questions" class="nav-link">Research</a></li>
+          <li><a href="#methodology" class="nav-link">Methodology</a></li>
+          <li><a href="#story" class="nav-link">Anatomy</a></li>
+          <li><a href="#sectoral" class="nav-link">Natural Selection</a></li>
+          <li><a href="#contagion" class="nav-link">Contagion</a></li>
+          <li><a href="#resilience" class="nav-link">Resilience</a></li>
         </ul>
     </nav>
 </header>
@@ -36,7 +39,7 @@
         Over the past 25 years, the world has been repeatedly shaken by events that escaped prediction and control. Terrorist attacks, natural disasters, technological breakthroughs, political ruptures, and global health crises have punctuated recent history.
 </div>
 
-<div style="width: 100%; height: 800px;">
+<div style="width: 100%; height: 750px;">
     <iframe 
         src="assets/visualizations/nasdaq_performance.html" 
         width="100%" 
@@ -45,8 +48,6 @@
         scrolling="no">
     </iframe>
 </div>
-
-
 
 <div class="hero-intro animate-intro" id="intro">
     <p class="intro-label">A market seen through its pulse</p>
@@ -58,29 +59,6 @@
       Some of these movements align with major events, such as the 2008 financial crisis. Others remain harder to explain. We will examine six landmark U.S. events to explore how crises translate into market behavior.
     </p>
 </div>
-
-    <div class="timeline-container">
-      <div id="timeline"></div>
-    </div>
-      <script type="module">
-        import { getAllEventItems } from './assets/js/eventUtils.js';
-
-        async function renderTimeline() {
-          const items = new vis.DataSet(await getAllEventItems());
-          const options = {
-            autoResize: false,
-            zoomable: true,
-            showCurrentTime: false,
-            locale: 'en',
-          };
-          const container = document.getElementById('timeline');
-          return new vis.Timeline(container, items, options);
-        }
-
-        renderTimeline().catch(error => {
-          console.error('Failed to render timeline', error);
-        });
-      </script>
 
     <div class="intro-research" id="research-questions">
       <h4 class="intro-subheading">The four research questions</h4>
@@ -955,6 +933,7 @@ duration = t<sub>reclaim</sub> - t<sub>peak</sub></pre>
   </div>
 
   <script src="assets/js/interactive-map.js"></script>
+  <script src="assets/js/scroll-spy-nav-bar.js"></script>
   
   <script>
       const myMapping = {
